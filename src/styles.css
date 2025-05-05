@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: start;
+    height: auto;
+    font-size: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: lime;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1.5em auto 0.8em;
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'main main'
+        'footer footer';
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    color: limegreen;
+    background-color: black;
+}
+
+footer img {
+    width: 25px;
+    height: 20px;
+}
+
+footer small {
+    font-size: 0.5em;
+    margin-top: 1em;
+}
