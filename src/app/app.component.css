@@ -1,0 +1,43 @@
+nav {
+    grid-area: nav;
+    margin-top: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: limegreen;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    color: limegreen;
+    background-color: black;
+}
+
+footer img {
+    width: 30px;
+    height: 25px;
+}
+
+footer small {
+    font-size: 0.5em;
+    margin-top: 1em;
+}
