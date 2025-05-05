@@ -7,17 +7,19 @@ body {
     display: grid;
     justify-content: space-evenly;
     align-items: start;
-    height: auto;
+    height: 100%;
     font-size: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    color: lime;
-    background-color: black;
-    grid-template-columns: auto;
+    color: limegreen;
+    grid-template-columns: 100%;
     grid-template-rows: 1.5em auto 0.8em;
     grid-template-areas:
         'nav'
         'main'
         'footer';
+    background: linear-gradient(to bottom, #0b1d3a, #6ec1e4);
+    background-repeat:repeat-y;
+    background-size: cover;
 }
