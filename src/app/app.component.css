@@ -25,11 +25,27 @@ main {
     grid-area: main;
 }
 
-.profile-picture{
-    border-radius: 75px;
-    max-width: 20%;
-    height: auto;
+.menu {
+    position: fixed;
+    border-radius: 5%;
+    left: -250px;
+    width: 250px;
+    height: 50%;
+    background-color: black;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 1050;
+}
+  
+.menu.open {
+    left: 0;
+}
+
+.menu nav a {
     display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: limegreen;
 }
 
 footer {

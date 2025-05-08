@@ -1,26 +1,29 @@
 <nav>
-  <ul>
+  <button class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
+
+  <!--<ul>
       <li><a href="">Home</a></li>
       <li><a href="">About</a></li>
       <li><a href="">Resume</a></li>
       <li><a href="">Projects</a></li>
       <li><a href="">Contact</a></li>
-  </ul>
+  </ul>-->
 </nav>
-
-<main class="main">
-  <div>
-    <h1 #animatedText class="animated-text">Welkom</h1>
-    <h2>Ik ben Almanzo Rosseel</h2>
-    <h3>Fullstack Developer</h3>
-    <h3>Backend Developer</h3>
-    <img class="profile-picture" src="profile-picture.jpg" alt="profile-picture">
+<main>
+  <div class="menu" [class.open]="menuOpen">
+    <nav>
+      <a routerLink="/">Home</a>
+      <a href="">About</a>
+      <a href="">Resume</a>
+      <a href="">Projects</a>
+      <a href="">Contact</a>
+    </nav>
   </div>
 </main>
+
+<router-outlet />
 
 <footer>
   <img src="MinARlogo.jpg" alt="logo made by owner Almanzo">
   <small>&copy; Almanzo Rosseel. All rights reserved.</small>
 </footer>
-
-<router-outlet />
