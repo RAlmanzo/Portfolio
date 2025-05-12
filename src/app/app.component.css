@@ -23,7 +23,7 @@ nav {
     padding: 10px;
 }
 
-nav ul {
+.sideMenu {
     display: none;
 }
 
@@ -92,29 +92,19 @@ footer small {
         background-color: black;
     }
 
+    .sideMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
     button {
         display: none;
     }
 
     .menu {
         display: none;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        gap: 0.5em;
-    }
-
-    nav li {
-        display: block;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: limegreen;
     }
 }
