@@ -1,13 +1,27 @@
 <div class="body-wrapper">
   <nav>
     <button class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
-    <ul>
+
+    <div class="sideMenu">
+      <img src="profile-picture.jpg" alt="Profielfoto" class="rounded-circle mb-3" width="100" height="125">
+
+      <div class="d-flex gap-3 mb-4">
+        <a href="https://www.linkedin.com/in/rosseel-almanzo-5241172ba/" target="_blank" rel="noopener">
+          <img src="Linkedin.png" alt="LinkedIn" width="32" height="32">
+        </a>
+        <a href="https://github.com/RAlmanzo" target="_blank" rel="noopener">
+          <img src="github.png" alt="GitHub" width="32" height="32">
+        </a>
+      </div>
+
+      <ul class="list-unstyled">
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Resume</a></li>
         <li><a href="">Projects</a></li>
         <li><a href="">Contact</a></li>
-    </ul>
+      </ul>  
+    </div>
   </nav>
   
   <main>
