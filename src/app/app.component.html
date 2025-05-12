@@ -1,29 +1,30 @@
-<nav>
-  <button class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
-
-  <!--<ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Resume</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
-  </ul>-->
-</nav>
-<main>
-  <div class="menu" [class.open]="menuOpen">
-    <nav>
-      <a routerLink="/">Home</a>
-      <a href="">About</a>
-      <a href="">Resume</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
-    </nav>
-  </div>
-</main>
-
-<router-outlet />
-
-<footer>
-  <img src="MinARlogo.jpg" alt="logo made by owner Almanzo">
-  <small>&copy; Almanzo Rosseel. All rights reserved.</small>
-</footer>
+<div class="body-wrapper">
+  <nav>
+    <button class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Resume</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="menu" [class.open]="menuOpen">
+      <nav>
+        <a routerLink="/">Home</a>
+        <a href="">About</a>
+        <a href="">Resume</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+    <router-outlet />
+  </main>
+  
+  <footer>
+    <img src="MinARlogo.jpg" alt="logo made by owner Almanzo">
+    <small>&copy; Almanzo Rosseel. All rights reserved.</small>
+  </footer>
+</div>
