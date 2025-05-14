@@ -13,7 +13,7 @@ export class HomeComponent implements AfterViewInit{
   @ViewChild('typedJobTitle') typedJobTitle!: ElementRef;
 
   name = "I'm Almanzo Rosseel";
-  jobTitle = "Junior Fullstack/ Backend<br>Developer";
+  jobTitle = "Junior Fullstack/<br>Backend Developer";
   typingSpeed = 200;
 
   constructor(private renderer: Renderer2) {}
@@ -71,7 +71,7 @@ export class HomeComponent implements AfterViewInit{
     let index = 0;
 
     const interval = setInterval(() => {
-      if (text.substr(index, 4) === '<br>') {
+      if (text.substring(index, index + 4) === '<br>') {
         const br = this.renderer.createElement('br');
         this.renderer.insertBefore(el, br, cursor);
         index += 4;
@@ -103,58 +103,4 @@ export class HomeComponent implements AfterViewInit{
       }
     }, this.typingSpeed);
   }
-
-  /*typeText(): void {
-    const el = this.typedText.nativeElement;
-    el.innerHTML = '';
-
-    const cursor = this.renderer.createElement('span');
-    this.renderer.addClass(cursor, 'cursor');
-    cursor.textContent = '|';
-    this.renderer.appendChild(el, cursor);
-
-    let index = 0;
-
-    const interval = setInterval(() => {
-      if (index < this.fullText.length) {
-        const span = this.renderer.createElement('span');
-        const char = this.fullText.charAt(index);
-        const textNode = this.renderer.createText(char === ' ' ? '\u00A0' : char);
-        this.renderer.appendChild(span, textNode);
-        this.renderer.insertBefore(el, span, cursor); // voeg letter toe vóór de cursor
-
-        // Animatie per letter
-        this.renderer.setStyle(span, 'opacity', '0');
-        this.renderer.setStyle(span, 'display', 'inline-block');
-
-        anime({
-          targets: span,
-          opacity: [0, 1],
-          translateY: [10, 0],
-          duration: 500,
-          easing: 'easeOutExpo'
-        });
-
-        index++;
-      } else {
-        clearInterval(interval);
-        this.renderer.removeChild(el, cursor);
-      }
-    }, this.typingSpeed);
-  }*/
-
-  /*typeText(): void {
-    const el = this.typedText.nativeElement;
-    el.innerHTML = '';
-    let index = 0;
-
-    const interval = setInterval(() => {
-      if (index < this.fullText.length) {
-        el.innerHTML += this.fullText.charAt(index);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, this.typingSpeed);
-  }*/
 }
