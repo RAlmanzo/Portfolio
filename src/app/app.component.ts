@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import anime from 'animejs/lib/anime.es.js';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Portfolio-Angular-Frontend';
+  menuOpen = false;
+
+  toggleMenu(){
+    this.menuOpen = !this.menuOpen;
+  }
 }
