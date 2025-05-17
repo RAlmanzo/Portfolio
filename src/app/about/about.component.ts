@@ -15,9 +15,9 @@ export class AboutComponent implements AfterViewInit {
 
   aboutTitle = 'About me';
   images = [
-    'assets/images/profile-menu.png',
-    'assets/images/profile-picture.png',
-    'assets/images/wooden-wall.png',
+    'assets/images/hiken2.jpg',
+    'assets/images/me.jpg',
+    'assets/images/hiken.jpg',
   ];
   positions: Position[] = ['left', 'center', 'right'];
   intervalId?: any;
