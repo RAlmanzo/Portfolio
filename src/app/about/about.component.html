@@ -1,0 +1,47 @@
+<div class="about d-flex align-items-center min-vh-100">
+    <div class="container">
+        <h2 #animatedText></h2>
+        <div class="row">
+            <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
+                <div>
+                    <p>Hi, I'm Almanzo Rosseel</p>
+                    <p>
+                        After a 13-year career as a painter/decorator, I decided to follow my passion for technology and make a career switch.
+                        In January 2025, I graduated with great distinction in Programming at Howest Bruges.
+                        During my studies, I built a strong foundation in C#, .NET (Core), SQL Server, REST APIs, HTML, CSS, Javascript, Vue 2.js and more (see Resume).
+                    </p>
+                    <p>
+                        During my internship at ZF Group in Ypres, I conducted independent research into GraphQL APIs/queries and successfully
+                        integrated them into an existing application. Additionally, I became familiar with microservices in .NET Core as backend technology,
+                        React.js as a frontend technology, and worked within an Agile (Scrum) team.
+                    </p>
+                    <p>
+                        My ambition is to further develop my career within an innovative environment where I can continuously improve my technical knowledge
+                        and skills. I enjoy working with C# and .NET (Core) and am highly motivated to deepen my expertise in other technologies as well.
+                    </p>
+                    <p>
+                        My background in another sector taught me to think flexibly and solve problems effectively, to meet deadlines,
+                        and to work both independently and within a team. I now apply these skills enthusiastically in software development.
+                    </p>
+                    <p>
+                        In my free time, I enjoy getting out into nature to go hiking with my dog and working on the renovation of my home.
+                        I also stay actively engaged in personal projects to sharpen my skills and explore new technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 d-flex justify-content-start align-items-center">
+                <div class="carousel-container position-relative min-vh-50">
+                    @for (img of images; let i = $index; track i) {
+                    <img
+                        id="img-{{i}}"
+                        src="{{img}}"
+                        class="carousel-image"
+                        alt="carousel image"
+                    />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
