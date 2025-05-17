@@ -12,6 +12,7 @@ export class HomeComponent implements AfterViewInit{
   @ViewChild('typedText') typedText!: ElementRef;
   @ViewChild('typedJobTitle') typedJobTitle!: ElementRef;
 
+  homeTitle = "Welcome"
   name = "I'm Almanzo Rosseel";
   jobTitle = "Junior Fullstack/<br>Backend Developer";
   typingSpeed = 200;
@@ -31,7 +32,7 @@ export class HomeComponent implements AfterViewInit{
   animateWelcome(): Promise<void> {
     return new Promise((resolve) => {
       const textEl = this.animatedText.nativeElement;
-      const text = textEl.textContent;
+      const text = this.homeTitle;
       textEl.textContent = '';
 
       const spans = [];
