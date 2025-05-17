@@ -1,4 +1,5 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
+import { TextAnimatorService } from '../services/text-animator.service';
 import anime from 'animejs/lib/anime.es.js';
 
 type Position = 'left' | 'center' | 'right';
@@ -10,18 +11,24 @@ type Position = 'left' | 'center' | 'right';
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements AfterViewInit {
+  @ViewChild('animatedText') animatedText!: ElementRef;
 
+  aboutTitle = 'About me';
   images = [
     'assets/images/profile-menu.png',
     'assets/images/profile-picture.png',
     'assets/images/wooden-wall.png',
   ];
-
   positions: Position[] = ['left', 'center', 'right'];
-
   intervalId?: any;
 
+  constructor(
+    private renderer: Renderer2,
+    private textAnimator: TextAnimatorService
+  ) {}
+
   ngAfterViewInit() {
+    this.textAnimator.animateText(this.aboutTitle, this.animatedText.nativeElement, this.renderer);
     this.animatePositions();
     this.intervalId = setInterval(() => this.nextSlide(), 4000);
   }
