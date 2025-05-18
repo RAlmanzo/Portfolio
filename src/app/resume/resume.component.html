@@ -3,14 +3,14 @@
 <h3>Skills</h3>
 
 <div class="mb-3">
-    <button (click)="toggleLanguages()" class="btn btn-primary me-2 mb-2">Languages</button>
-    <button (click)="toggleFrameworksAndPlatforms()" class="btn btn-primary me-2 mb-2">Frameworks & Platforms</button>
-    <button (click)="toggleDatabasesAndQueryLanguages()" class="btn btn-primary me-2 mb-2">Databases & Query Languages</button>
+    <button (click)="toggleBarChart('LanguagesChart')" class="btn btn-primary me-2 mb-2">Languages</button>
+    <button (click)="toggleBarChart('FrameworksPlatformsChart')" class="btn btn-primary me-2 mb-2">Frameworks & Platforms</button>
+    <button (click)="toggleBarChart('DatabasesQueryLanguagesChart')" class="btn btn-primary me-2 mb-2">Databases & Query Languages</button>
 </div>
 
 <div class="container mt-4">
     <div class="row justify-content-center">
-        @if (showLanguagesChart)
+        <!--@if (showLanguagesChart)
         {
             <div class="col-9 mb-4">
                 <div>
@@ -35,6 +35,30 @@
                     <app-databases-query-languages-bar-chart></app-databases-query-languages-bar-chart>
                 </div>
             </div>
+        }-->
+
+        @switch (barChart) {
+            @case ("LanguagesChart") {
+                <div class="col-9 mb-4">
+                    <div>
+                        <app-language-bar-chart></app-language-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("FrameworksPlatformsChart") {
+                <div class="col-9 mb-4">
+                    <div>
+                        <app-frameworks-platforms-bar-chart></app-frameworks-platforms-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("DatabasesQueryLanguagesChart") {
+                <div class="col-9 mb-4">
+                    <div>
+                        <app-databases-query-languages-bar-chart></app-databases-query-languages-bar-chart>
+                    </div>
+                </div>
+            }
         }
     </div>
 </div>
