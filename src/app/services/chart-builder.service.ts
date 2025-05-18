@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ChartBarBuilderService } from './chart-bar-builder.service';
+import { ChartBarBuilderService } from './chart-builder.service.spec';
 
 describe('ChartBarBuilderService', () => {
   let service: ChartBarBuilderService;
