@@ -1,5 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { ChartBarBuilderService } from '../../services/chart-builder.service.spec';
+import { ChartBarBuilderService } from '../../services/chart-builder.service';
 import { ChartConfiguration } from 'chart.js';
 
 @Component({
