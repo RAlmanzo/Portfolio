@@ -3,17 +3,29 @@ import { ChartBarBuilderService } from '../../services/chart-builder.service.spe
 import { ChartConfiguration } from 'chart.js';
 
 @Component({
-  selector: 'app-language-bar-chart',
+  selector: 'app-frameworks-platforms-bar-chart',
   imports: [],
-  templateUrl: './language-bar-chart.component.html',
-  styleUrl: './language-bar-chart.component.css'
+  templateUrl: './frameworks-platforms-bar-chart.component.html',
+  styleUrl: './frameworks-platforms-bar-chart.component.css'
 })
-export class LanguageBarChartComponent implements AfterViewInit{
+export class FrameworksPlatformsBarChartComponent implements AfterViewInit {
   chart:any;
-  labels = ['C# (OOP)','JavaScript','TypeScript','HTML5','CSS'];
-  dataSetData = [90, 85, 75, 90, 90];
-  backgroundColor = 'rgba(255, 99, 132, 0.2)';
-  borderColor = 'rgb(255, 99, 132)';
+  labels = [
+    ".NET (WPF, Console)",
+    "ASP.NET Core MVC",
+    "ASP.NET Core Web API",
+    "EF Core",
+    "Microsoft Identity",
+    "Angular 19",
+    "React.js",
+    "Vue.js",
+    "Blazor (Server)",
+    "Hot Chocolate (GraphQL C#)",
+    "Xamarin Forms (MVVM)"
+  ];
+  dataSetData = [90, 91, 91, 90, 90, 70, 50, 80, 85, 70, 85];
+  backgroundColor = 'rgba(255, 159, 64, 0.2)';
+  borderColor = 'rgb(255, 159, 64)';
 
   chartBarData = {
     labels: this.labels,
@@ -36,10 +48,10 @@ export class LanguageBarChartComponent implements AfterViewInit{
         },
         x: {
           ticks: { 
-            color: 'black', 
+            color: 'black',
             font: {
               size: 14
-            }
+            } 
           }
         }
       },
