@@ -11,18 +11,18 @@ import { ChartConfiguration } from 'chart.js';
 export class FrameworksPlatformsBarChartComponent implements AfterViewInit {
   chart:any;
   labels = [
-  ".NET (WPF, Console)",
-  "ASP.NET Core MVC",
-  "ASP.NET Core Web API",
-  "EF Core",
-  "Microsoft Identity",
-  "Angular 19",
-  "React.js",
-  "Vue.js",
-  "Blazor (Server)",
-  "Hot Chocolate (GraphQL C#)",
-  "Xamarin Forms (MVVM)"
-];
+    ".NET (WPF, Console)",
+    "ASP.NET Core MVC",
+    "ASP.NET Core Web API",
+    "EF Core",
+    "Microsoft Identity",
+    "Angular 19",
+    "React.js",
+    "Vue.js",
+    "Blazor (Server)",
+    "Hot Chocolate (GraphQL C#)",
+    "Xamarin Forms (MVVM)"
+  ];
   dataSetData = [90, 91, 91, 90, 90, 70, 50, 80, 85, 70, 85];
   backgroundColor = 'rgba(255, 159, 64, 0.2)';
   borderColor = 'rgb(255, 159, 64)';
