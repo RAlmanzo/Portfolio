@@ -14,6 +14,8 @@ export class ChartBarBuilderService {
       type: 'bar',
       data: data,
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           y: {
             beginAtZero: true,
