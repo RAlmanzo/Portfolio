@@ -76,20 +76,40 @@ footer small {
     margin-left: 10px;
 }
 
+.footer-menu {
+  display: none;
+}
+
 @media only screen and (min-width: 50em) {
     .body-wrapper {
         display: grid;
         grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            'nav main'
-            'footer footer';
+            'nav main';
     }
 
     nav {
         grid-area: nav;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
         background-color: black;
+        position: sticky;
+        top: 0;
+        align-self: start;
+        z-index: 1000;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: auto;
+        text-align: center;
+        padding: 1rem;
+        color: white;
     }
 
     .sideMenu {
@@ -102,11 +122,24 @@ footer small {
         font-size: 1.2em;
     }
 
+    .footer-menu img {
+        width: 2em;
+        height: 2em;
+    }
+
+    .footer-menu small {
+        color: limegreen;
+    }
+
     button {
         display: none;
     }
 
     .menu {
+        display: none;
+    }
+
+    footer {
         display: none;
     }
 }
