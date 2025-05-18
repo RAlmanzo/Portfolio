@@ -1,6 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { ChartBarBuilderService } from '../../services/chart-builder.service';
-import { ChartConfiguration } from 'chart.js';
 
 @Component({
   selector: 'app-databases-query-languages-bar-chart',
@@ -32,35 +31,9 @@ export class DatabasesQueryLanguagesBarChartComponent implements AfterViewInit {
     }]
   };
 
-  config: ChartConfiguration<'bar'> = {
-    type: 'bar',
-    data: this.chartBarData,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          ticks: { color: 'black', }
-        },
-        x: {
-          ticks: { 
-            color: 'black',
-            font: {
-              size: 14
-            } 
-          }
-        }
-      },
-      plugins: {
-        legend: {
-          display: false
-        }
-      }
-    },
-  };
-
   constructor(private chartBarBuilder: ChartBarBuilderService,) {}
 
   ngAfterViewInit(): void {
-    this.chart = this.chartBarBuilder.createBarChart(this.config);
+    this.chart = this.chartBarBuilder.createBarChart(this.chartBarData);
   }
 }
