@@ -1,0 +1,13 @@
+.chart-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* 50% = hoogte is 50% van de breedte */
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
