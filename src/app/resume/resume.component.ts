@@ -10,25 +10,9 @@ import { DatabasesQueryLanguagesBarChartComponent } from '../charts/databases-qu
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
-  showLanguagesChart = true;
-  showFrameworksPlatformsChart = false;
-  showDatabasesQueryLanguagesChart = false;
+  barChart = "LanguagesChart";
 
-  toggleLanguages(){
-    this.showFrameworksPlatformsChart = false;
-    this.showDatabasesQueryLanguagesChart = false;
-    this.showLanguagesChart = true;
-  }
-
-  toggleFrameworksAndPlatforms(){
-    this.showLanguagesChart = false;
-    this.showDatabasesQueryLanguagesChart = false;
-    this.showFrameworksPlatformsChart = true;
-  }
-
-  toggleDatabasesAndQueryLanguages(){
-    this.showLanguagesChart = false;
-    this.showFrameworksPlatformsChart = false;
-    this.showDatabasesQueryLanguagesChart = true;
+  toggleBarCharts(value:string){
+    this.barChart = value;
   }
 }
