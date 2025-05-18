@@ -31,7 +31,16 @@ export class LanguageBarChartComponent implements AfterViewInit{
     options: {
       scales: {
         y: {
-          beginAtZero: true
+          beginAtZero: true,
+          ticks: { color: 'black', }
+        },
+        x: {
+          ticks: { 
+            color: 'black', 
+            font: {
+              size: 14
+            }
+          }
         }
       },
       plugins: {
