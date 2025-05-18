@@ -9,7 +9,34 @@ export class ChartBarBuilderService {
     Chart.register(...registerables);
   }
 
-  createBarChart(config:ChartConfiguration): void {
+  createBarChart(data:any): void {
+    const config: ChartConfiguration<'bar'> = {
+      type: 'bar',
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: { color: 'black', }
+          },
+          x: {
+            ticks: { 
+              color: 'black',
+              font: {
+                size: 14
+              } 
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      },
+    };
+
     new Chart('skillsChart', config);
   }
 }
