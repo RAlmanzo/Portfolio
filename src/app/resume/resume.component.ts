@@ -9,5 +9,16 @@ import { FrameworksPlatformsBarChartComponent } from '../charts/frameworks-platf
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
-  
+  showLanguagesChart = true;
+  showFrameworksPlatformsChart = false;
+
+  toggleLanguages(){
+    this.showLanguagesChart = true;
+    this.showFrameworksPlatformsChart = false;
+  }
+
+  toggleFrameworksAndPlatforms(){
+    this.showLanguagesChart = false;
+    this.showFrameworksPlatformsChart = true;
+  }
 }
