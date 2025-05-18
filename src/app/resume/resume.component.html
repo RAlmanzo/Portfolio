@@ -5,6 +5,7 @@
 <div class="mb-3">
     <button (click)="toggleBarCharts('languagesChart')" class="btn btn-primary me-2 mb-2">Languages</button>
     <button (click)="toggleBarCharts('frameworksPlatformsChart')" class="btn btn-primary me-2 mb-2">Frameworks & Platforms</button>
+    <button (click)="toggleBarCharts('librariesChart')" class="btn btn-primary me-2 mb-2">Libraries</button>
     <button (click)="toggleBarCharts('databasesQueryLanguagesChart')" class="btn btn-primary me-2 mb-2">Databases & Query Languages</button>
     <button (click)="toggleBarCharts('apisChart')" class="btn btn-primary me-2 mb-2">API's</button>
     <button (click)="toggleBarCharts('toolsVersionControlChart')" class="btn btn-primary me-2 mb-2">Tools & Version Control</button>
@@ -24,6 +25,13 @@
                 <div class="col-9 mb-4">
                     <div>
                         <app-frameworks-platforms-bar-chart></app-frameworks-platforms-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("librariesChart") {
+                <div class="col-9 mb-4">
+                    <div>
+                        <app-libraries-bar-chart></app-libraries-bar-chart>
                     </div>
                 </div>
             }

@@ -4,16 +4,18 @@ import { FrameworksPlatformsBarChartComponent } from '../charts/frameworks-platf
 import { DatabasesQueryLanguagesBarChartComponent } from '../charts/databases-query-languages-bar-chart/databases-query-languages-bar-chart.component';
 import { ApisBarChartComponent } from '../charts/apis-bar-chart/apis-bar-chart.component';
 import { ToolsVersioncontrolBarChartComponent } from '../charts/tools-versioncontrol-bar-chart/tools-versioncontrol-bar-chart.component';
+import { LibrariesBarChartComponent } from "../charts/libraries-bar-chart/libraries-bar-chart.component";
 
 @Component({
   selector: 'app-resume',
   imports: [
-    LanguageBarChartComponent, 
-    FrameworksPlatformsBarChartComponent, 
-    DatabasesQueryLanguagesBarChartComponent, 
+    LanguageBarChartComponent,
+    FrameworksPlatformsBarChartComponent,
+    DatabasesQueryLanguagesBarChartComponent,
     ApisBarChartComponent,
-    ToolsVersioncontrolBarChartComponent
-  ],
+    ToolsVersioncontrolBarChartComponent,
+    LibrariesBarChartComponent
+],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
