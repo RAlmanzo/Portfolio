@@ -1,15 +1,16 @@
-import { Injectable } from '@angular/core';
-import { Chart, ChartConfiguration, registerables } from 'chart.js';
+import { TestBed } from '@angular/core/testing';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class ChartBarBuilderService {
-  constructor() {
-    Chart.register(...registerables);
-  }
+import { ChartBarBuilderService } from './chart-builder.service';
 
-  createBarChart(config:ChartConfiguration): void {
-    new Chart('skillsChart', config);
-  }
-}
+describe('ChartBarBuilderService', () => {
+  let service: ChartBarBuilderService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(ChartBarBuilderService);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
