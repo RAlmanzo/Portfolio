@@ -15,8 +15,8 @@ export class ApisBarChartComponent implements AfterViewInit {
     "GraphQL API's (C#)"
   ];
   dataSetData = [85, 75];
-  backgroundColor = 'rgba(75, 192, 192, 0.2)';
-  borderColor = 'rgb(75, 192, 192)';
+  backgroundColor = 'rgba(153, 102, 255, 0.2)';
+  borderColor = 'rgb(153, 102, 255)';
 
   chartBarData = {
     labels: this.labels,
