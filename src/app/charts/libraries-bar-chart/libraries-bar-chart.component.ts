@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChartBarBuilderService } from '../../services/chart-builder.service';
 
 @Component({
   selector: 'app-libraries-bar-chart',
