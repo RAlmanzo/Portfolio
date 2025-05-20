@@ -14,15 +14,22 @@ export class ChartBarBuilderService {
       type: 'bar',
       data: data,
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           y: {
             beginAtZero: true,
             max: 100,
-            ticks: { color: 'black', }
+            ticks: { 
+              color: 'white',
+              font: {
+                size: 14
+              } 
+            }
           },
           x: {
             ticks: { 
-              color: 'black',
+              color: 'white',
               font: {
                 size: 14
               } 
