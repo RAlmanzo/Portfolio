@@ -20,11 +20,16 @@ export class ChartBarBuilderService {
           y: {
             beginAtZero: true,
             max: 100,
-            ticks: { color: 'black', }
+            ticks: { 
+              color: 'white',
+              font: {
+                size: 14
+              } 
+            }
           },
           x: {
             ticks: { 
-              color: 'black',
+              color: 'white',
               font: {
                 size: 14
               } 
