@@ -1,20 +1,38 @@
 
 
 <!--<div class="row justify-content-center pt-5 pb-5">-->
-    <div class="col-10">
-        <div class="info d-flex align-items-stretch p-4 rounded">
-            <div class="ps-4">
-                <h3>Personal Portfolio</h3>
-                <h5>Description:</h5>
-                <p>
-                    This website is my personal portfolio, where I introduce myself, showcase my skills, 
-                    and provide an overview of my projects. Visitors can contact me through the site and view my code on GitHub. 
-                    I designed and built this website entirely by myself, with a focus on responsive design and user-friendliness. 
-                    It’s a living project that I continuously improve as my experience and knowledge grow.
-                </p>
-                <h5>Tech Stack:</h5>
-                <p>Frontend: Angular 19, Typescript, HTML5, CSS, Bootstrap, Anime.js, Chart.js, GitHub Pages</p>
-                <p>Backend: ...in progress: C#, ASP.NETCore Web API, MongoDB, Microsoft Azure</p>
+
+    <div class="about d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <h3>Personal Portfolio</h3>
+                        <h5>Description:</h5>
+                        <p>
+                            This website is my personal portfolio, where I introduce myself, showcase my skills, 
+                            and provide an overview of my projects. Visitors can contact me through the site and view my code on GitHub. 
+                            I designed and built this website entirely by myself, with a focus on responsive design and user-friendliness. 
+                            It’s a living project that I continuously improve as my experience and knowledge grow.
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>Frontend: Angular 19, Typescript, HTML5, CSS, Bootstrap, Anime.js, Chart.js, GitHub Pages</p>
+                        <p>Backend: ...in progress: C#, ASP.NETCore Web API, MongoDB, Microsoft Azure</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="carousel-container position-relative">
+                        @for (img of portfolioImages; let i = $index; track i) {
+                            <img
+                                id="img-{{i}}"
+                                src="{{img}}"
+                                class="carousel-image"
+                                alt="carousel image"
+                            />
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -40,7 +58,7 @@
 
                 <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="carousel-container position-relative">
-                        @for (img of images; let i = $index; track i) {
+                        @for (img of liveSportsImages; let i = $index; track i) {
                             <img
                                 id="img-{{i}}"
                                 src="{{img}}"
