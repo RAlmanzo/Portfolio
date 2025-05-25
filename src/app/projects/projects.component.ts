@@ -16,6 +16,10 @@ export class ProjectsComponent implements AfterViewInit{
     'assets/images/reporter.png',
     'assets/images/user.png',
   ];
+  sniffHikesWebAppImages = [
+    'assets/images/reporter.png',
+    'assets/images/user.png',
+  ];
 
   constructor (
     private imageAnimator: AnimatorService,
@@ -24,5 +28,6 @@ export class ProjectsComponent implements AfterViewInit{
   ngAfterViewInit() {
     this.imageAnimator.animateSlideImages(this.portfolioImages);
     this.imageAnimator.animateSlideImages(this.liveSportsImages);
+    this.imageAnimator.animateSlideImages(this.sniffHikesWebAppImages);
   }
 }
