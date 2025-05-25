@@ -1,6 +1,6 @@
-<h3>My Projects</h3>
 
-<div class="row justify-content-center pt-5 pb-5">
+
+<!--<div class="row justify-content-center pt-5 pb-5">-->
     <div class="col-10">
         <div class="info d-flex align-items-stretch p-4 rounded">
             <div class="ps-4">
@@ -18,21 +18,38 @@
             </div>
         </div>
     </div>
+    
+    <div class="about d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <h3>Live sports report</h3>
+                        <h5>Description:</h5>
+                        <p>
+                            As a school project, I developed a web application that allows a reporter to provide live coverage of a kayak 
+                            competition. Users can register for a race in advance and follow the event live through the app. 
+                            The application was built with a focus on real-time interaction, user-friendly design, 
+                            and registration functionality. This project taught me how to build a dynamic, 
+                            component-based single-page web environment with multiple user roles (reporter and audience).
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>C#, Blazor (Server), Razor Pages, SignalR, HTML5, Bootstrap</p>
+                    </div>
+                </div>
 
-    <div class="col-10 pt-3">
-        <div class="info d-flex align-items-stretch p-4 rounded">
-            <div class="ps-4">
-                <h3>Live sports report</h3>
-                <h5>Description:</h5>
-                <p>
-                    As a school project, I developed a web application that allows a reporter to provide live coverage of a kayak 
-                    competition. Users can register for a race in advance and follow the event live through the app. 
-                    The application was built with a focus on real-time interaction, user-friendly design, 
-                    and registration functionality. This project taught me how to build a dynamic, 
-                    component-based single-page web environment with multiple user roles (reporter and audience).
-                </p>
-                <h5>Tech Stack:</h5>
-                <p>C#, Blazor (Server), Razor Pages, SignalR, HTML5, Bootstrap</p>
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="carousel-container position-relative">
+                        @for (img of images; let i = $index; track i) {
+                            <img
+                                id="img-{{i}}"
+                                src="{{img}}"
+                                class="carousel-image"
+                                alt="carousel image"
+                            />
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -83,4 +100,4 @@
             </div>
         </div>
     </div>
-</div>
+<!--</div>-->
