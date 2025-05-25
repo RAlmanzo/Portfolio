@@ -33,6 +33,12 @@ export class AboutComponent implements AfterViewInit {
     this.intervalId = setInterval(() => this.nextSlide(), 4000);
   }
 
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
   nextSlide() {
     this.positions = this.positions.map(pos => {
       if (pos === 'left') return 'right';
