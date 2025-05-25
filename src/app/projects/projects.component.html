@@ -75,22 +75,47 @@
     <div class="col-10 pt-3">
         <div class="info d-flex align-items-stretch p-4 rounded">
             <div class="ps-4">
-                    <h3>Sniff-Hikes Web app</h3>    
-                <h5>Description:</h5>
-                <p>
-                    This web application is designed for people who enjoy hiking in nature with their dogs. After registering, users can create 
-                    and share hiking events and routes, as well as leave comments on posts from others. 
-                    The backend is built using an ASP.NET Core Web API, with API documentation provided via Swagger for structured and 
-                    accessible endpoint reference. The application also includes an admin section that allows management of users, events, routes, 
-                    and comments to ensure smooth moderation and control. This project combines frontend and backend development, and taught me 
-                    how to implement user authentication/authorization, CRUD operations, and API integration within the .NET ecosystem.
-                </p>
-                <h5>Tech Stack:</h5>
-                <p>Frontend: ASP.NET Core MVC, HTML5, CSS, Bootstrap, Vue2</p>
-                <p>
-                    Backend: C#, ASP.NET Core Web API (REST), Swagger, Microsoft Identity, EF Core (ORM), Microsoft SQL Server, 
-                    Clean Architecture, Anotation Validation
-                </p>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div class="about d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <h3>Sniff-Hikes Web app</h3>    
+                        <h5>Description:</h5>
+                        <p>
+                            This web application is designed for people who enjoy hiking in nature with their dogs. After registering, users can create 
+                            and share hiking events and routes, as well as leave comments on posts from others. 
+                            The backend is built using an ASP.NET Core Web API, with API documentation provided via Swagger for structured and 
+                            accessible endpoint reference. The application also includes an admin section that allows management of users, events, routes, 
+                            and comments to ensure smooth moderation and control. This project combines frontend and backend development, and taught me 
+                            how to implement user authentication/authorization, CRUD operations, and API integration within the .NET ecosystem.
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>Frontend: ASP.NET Core MVC, HTML5, CSS, Bootstrap, Vue2</p>
+                        <p>
+                            Backend: C#, ASP.NET Core Web API (REST), Swagger, Microsoft Identity, EF Core (ORM), Microsoft SQL Server, 
+                            Clean Architecture, Anotation Validation
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="carousel-container position-relative">
+                        @for (img of sniffHikesWebAppImages; let i = $index; track i) {
+                            <img
+                                id="img-{{i}}"
+                                src="{{img}}"
+                                class="carousel-image"
+                                alt="carousel image"
+                            />
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
