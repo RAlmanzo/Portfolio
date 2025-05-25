@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TextAnimatorService } from './text-animator.service';
+import { TextAnimatorService } from './animator.service';
 
 describe('TextAnimatorService', () => {
   let service: TextAnimatorService;
