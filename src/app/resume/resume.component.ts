@@ -5,7 +5,7 @@ import { DatabasesQueryLanguagesBarChartComponent } from '../charts/databases-qu
 import { ApisBarChartComponent } from '../charts/apis-bar-chart/apis-bar-chart.component';
 import { ToolsVersioncontrolBarChartComponent } from '../charts/tools-versioncontrol-bar-chart/tools-versioncontrol-bar-chart.component';
 import { LibrariesBarChartComponent } from "../charts/libraries-bar-chart/libraries-bar-chart.component";
-import { TextAnimatorService } from '../services/text-animator.service';
+import { AnimatorService } from '../services/animator.service';
 
 @Component({
   selector: 'app-resume',
@@ -28,7 +28,7 @@ export class ResumeComponent implements AfterViewInit{
 
   constructor(
     private renderer: Renderer2,
-    private textAnimator: TextAnimatorService
+    private textAnimator: AnimatorService
   ){}
 
   ngAfterViewInit() {

@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
-import { TextAnimatorService } from '../services/text-animator.service';
+import { AnimatorService } from '../services/animator.service';
 import anime from 'animejs/lib/anime.es.js';
 
 type Position = 'left' | 'center' | 'right';
@@ -24,7 +24,7 @@ export class AboutComponent implements AfterViewInit {
 
   constructor(
     private renderer: Renderer2,
-    private textAnimator: TextAnimatorService
+    private textAnimator: AnimatorService
   ) {}
 
   ngAfterViewInit() {

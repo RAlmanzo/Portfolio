@@ -4,7 +4,7 @@ import anime from 'animejs/lib/anime.es.js';
 @Injectable({
   providedIn: 'root'
 })
-export class TextAnimatorService {
+export class AnimatorService {
 
   constructor() { }
 

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TextAnimatorService } from './animator.service';
+import { AnimatorService } from './animator.service';
 
 describe('TextAnimatorService', () => {
-  let service: TextAnimatorService;
+  let service: AnimatorService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TextAnimatorService);
+    service = TestBed.inject(AnimatorService);
   });
 
   it('should be created', () => {
