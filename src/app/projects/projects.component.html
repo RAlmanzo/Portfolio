@@ -123,23 +123,48 @@
     <div class="col-10 pt-3">
         <div class="info d-flex align-items-stretch p-4 rounded">
             <div class="ps-4">
-                <h3>Sniff-Hikes Mobile app (Android and Windows)</h3>
-                <h5>Description:</h5>
-                <p>
-                    As an extension of my hiking web application, I developed a cross-platform mobile app using Xamarin.Forms targeting 
-                    Android and Windows devices. This app enables registered users to share and explore hiking events and routes tailored 
-                    for dog owners. Users can post comments, view detailed addresses, and access route navigation via maps or apps like Waze. 
-                    The app also allows users to register for events, manage their profiles—including adding their dogs—and discover hiking 
-                    zones in Belgium specifically suitable for dogs, with the ability to share experiences through comments.
+                
+            </div>
+        </div>
+    </div>
 
-                    A key feature(wich is still in progress) is the ability to record their own hikes, share these routes with the community, 
-                    and receive feedback. Additionally, the app includes an admin section for managing users, events, routes, and content, 
-                    ensuring smooth operation and community moderation. This project demonstrates my skills in mobile development, 
-                    cross-platform design, user interaction, and backend integration.
-                </p>
-                <h5>Tech Stack:</h5>
-                <p>Frontend: C#, Xamarin Forms (Android, Windows), MVVM, XAML, Databinding</p>
-                <p>Backend: C# GraphQL API (...in progress), Hotchocolate .NET, Firebase Cloud DB</p>
+    <div class="about d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <div>
+                        <h3>Sniff-Hikes Mobile app (Android and Windows)</h3>
+                        <h5>Description:</h5>
+                        <p>
+                            As an extension of my hiking web application, I developed a cross-platform mobile app using Xamarin.Forms targeting 
+                            Android and Windows devices. This app enables registered users to share and explore hiking events and routes tailored 
+                            for dog owners. Users can post comments, view detailed addresses, and access route navigation via maps or apps like Waze. 
+                            The app also allows users to register for events, manage their profiles—including adding their dogs—and discover hiking 
+                            zones in Belgium specifically suitable for dogs, with the ability to share experiences through comments.
+
+                            A key feature(wich is still in progress) is the ability to record their own hikes, share these routes with the community, 
+                            and receive feedback. Additionally, the app includes an admin section for managing users, events, routes, and content, 
+                            ensuring smooth operation and community moderation. This project demonstrates my skills in mobile development, 
+                            cross-platform design, user interaction, and backend integration.
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>Frontend: C#, Xamarin Forms (Android, Windows), MVVM, XAML, Databinding</p>
+                        <p>Backend: C# GraphQL API (...in progress), Hotchocolate .NET, Firebase Cloud DB</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="carousel-container position-relative">
+                        @for (img of sniffHikesMobileAppImages; let i = $index; track i) {
+                            <img
+                                id="img-{{i}}"
+                                src="{{img}}"
+                                class="carousel-image"
+                                alt="carousel image"
+                            />
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
