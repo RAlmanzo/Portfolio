@@ -8,7 +8,11 @@ import { AnimatorService } from '../services/animator.service';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent implements AfterViewInit{
-  images = [
+  portfolioImages = [
+    'assets/images/reporter.png',
+    'assets/images/user.png',
+  ];
+  liveSportsImages = [
     'assets/images/reporter.png',
     'assets/images/user.png',
   ];
@@ -18,6 +22,7 @@ export class ProjectsComponent implements AfterViewInit{
   ){}
 
   ngAfterViewInit() {
-    this.imageAnimator.animateSlideImages(this.images);
+    this.imageAnimator.animateSlideImages(this.portfolioImages);
+    this.imageAnimator.animateSlideImages(this.liveSportsImages);
   }
 }
