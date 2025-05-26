@@ -1,8 +1,6 @@
 .home {
-    background-image: url('/assets/images/wooden-wall.png');
     width: 100%;
     height: 100vh;
-    background-size: cover;
 }
 
 h1 {
@@ -14,10 +12,15 @@ h2, h3 {
   font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
+.image-wrapper {
+  width: 100%;
+  max-width: 95%;
+}
+
 .profile-picture {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .cursor {
