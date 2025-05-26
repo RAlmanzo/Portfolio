@@ -12,9 +12,6 @@
         'nav'
         'main'
         'footer';
-    background: linear-gradient(to bottom, #0b1d3a, #6e84e4);
-    background-repeat:repeat-y;
-    background-size: cover;
 }
 
 nav {
@@ -30,6 +27,8 @@ main {
     grid-area: main;
     height: 100%;
     color: limegreen;
+    background-image: url('/assets/images/home-page.png');
+    background-size: cover;
 }
 
 .menu {
