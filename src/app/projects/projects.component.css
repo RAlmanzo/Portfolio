@@ -1,6 +1,8 @@
-.about {
+.projects {
   width: 100%;
   min-height: 100vh;
+  background-image: url('/assets/images/home-page.png');
+  background-size: cover;
 }
 
 .carousel-container {
