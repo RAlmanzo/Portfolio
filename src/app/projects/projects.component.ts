@@ -15,8 +15,8 @@ export class ProjectsComponent implements AfterViewInit{
   
 
   portfolioImages = [
-    'assets/images/reporter.png',
-    'assets/images/user.png',
+    'assets/images/portfolio1.png',
+    'assets/images/portfolio2.png',
   ];
   liveSportsImages = [
     'assets/images/reporter.png',
@@ -27,8 +27,9 @@ export class ProjectsComponent implements AfterViewInit{
     'assets/images/user.png',
   ];
   sniffHikesMobileAppImages = [
-    'assets/images/reporter.png',
-    'assets/images/user.png',
+    'assets/images/sniffhikesmob3.png',
+    'assets/images/sniffhikesmob2.png',
+    'assets/images/sniffhikesmob1.png',
   ];
 
   
