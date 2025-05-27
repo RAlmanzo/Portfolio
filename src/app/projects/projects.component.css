@@ -1,8 +1,22 @@
 .projects {
-  width: 100%;
+  width: 99%;
   min-height: 100vh;
   background-image: url('/assets/images/home-page.png');
   background-size: cover;
+  border-bottom: 2px solid limegreen;
+}
+
+h3 {
+  text-align: center;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+.dotted::before {
+  content: "• ";
+  color: limegreen;
 }
 
 .carousel-container {
