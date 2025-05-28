@@ -23,8 +23,7 @@ export class ProjectsComponent implements AfterViewInit{
     'assets/images/user.png',
   ];
   sniffHikesWebAppImages = [
-    'assets/images/reporter.png',
-    'assets/images/user.png',
+    'assets/images/sniffhikesWebApp.png',
   ];
   sniffHikesMobileAppImages = [
     'assets/images/sniffhikesmob3.png',
