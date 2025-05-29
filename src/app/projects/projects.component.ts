@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
 import { AnimatorService } from '../services/animator.service';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -13,6 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class ProjectsComponent implements AfterViewInit{
   @ViewChildren('imageContainer') containers!: QueryList<ElementRef>;
+  @ViewChild('animatedText') animatedText!: ElementRef;
+
+  projectsTitle = "My Projects";
 
   imageSets: string[][] = [
     ['assets/images/portfolio1.png', 'assets/images/portfolio2.png'],
@@ -24,11 +27,14 @@ export class ProjectsComponent implements AfterViewInit{
   currentIndexes = Array(this.imageSets.length).fill(0);
   
   constructor (
+    private renderer : Renderer2,
     private imageAnimator: AnimatorService,
   ){}
 
   ngAfterViewInit() {
-      this.containers.forEach((container, index) => {
+    this.imageAnimator.animateText(this.projectsTitle, this.animatedText.nativeElement, this.renderer);
+
+    this.containers.forEach((container, index) => {
       const images = this.imageSets[index];
 
       if (images) {
@@ -44,6 +50,7 @@ export class ProjectsComponent implements AfterViewInit{
     });
 
     const matchMedia = gsap.matchMedia();
+
     matchMedia.add('(min-width: 992px) and (min-height: 740px)', () => {
       gsap.utils.toArray('.projects').forEach((box) => {
         ScrollTrigger.create({
