@@ -1,0 +1,140 @@
+<h2 #animatedText></h2>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-9 mb-3">
+            <h3>Skills</h3>
+        </div>
+
+        <div class="col-11 mb-3 text text-center">
+            <button (click)="toggleBarCharts('languagesChart')" class="btn btn-primary me-2 mb-2">Languages</button>
+            <button (click)="toggleBarCharts('frameworksPlatformsChart')" class="btn btn-primary me-2 mb-2">Frameworks & Platforms</button>
+            <button (click)="toggleBarCharts('librariesChart')" class="btn btn-primary me-2 mb-2">Libraries</button>
+            <button (click)="toggleBarCharts('databasesQueryLanguagesChart')" class="btn btn-primary me-2 mb-2">Databases & Query Languages</button>
+            <button (click)="toggleBarCharts('apisChart')" class="btn btn-primary me-2 mb-2">API's</button>
+            <button (click)="toggleBarCharts('toolsVersionControlChart')" class="btn btn-primary me-2 mb-2">Tools & Version Control</button>
+        </div>
+
+        @switch (barChart) {
+            @case ("languagesChart") {
+                <div class="chart col-12 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-language-bar-chart></app-language-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("frameworksPlatformsChart") {
+                <div class="chart col-12 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-frameworks-platforms-bar-chart></app-frameworks-platforms-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("librariesChart") {
+                <div class="chart col-12 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-libraries-bar-chart></app-libraries-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("databasesQueryLanguagesChart") {
+                <div class="chart col-12 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-databases-query-languages-bar-chart></app-databases-query-languages-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("apisChart") {
+                <div class="chart col-11 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-apis-bar-chart></app-apis-bar-chart>
+                    </div>
+                </div>
+            }
+            @case ("toolsVersionControlChart") {
+                <div class="col-11 col-md-9 mb-4 pb-5">
+                    <div>
+                        <app-tools-versioncontrol-bar-chart></app-tools-versioncontrol-bar-chart>
+                    </div>
+                </div>
+            }
+        }
+
+        <div class="row justify-content-center pt-5 pb-5">
+            <div class="col-10">
+                <div class="info d-flex align-items-stretch p-4 rounded">
+                    <div class="col-auto position-relative pe-0">
+                        <div class="vertical-line-container">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Education</h3>
+                        <p>- Howest Bruges <br> Associate Degree in Programming 2023–2025 <br> Diploma obtained in January 2025</p>
+                        <p>- Atheneum Calmeyn De Panne <br> Electronic Installation Techniques (TSO3) <br> A2 diploma obtained in June 2004</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 pt-5">
+                <div class="info d-flex align-items-stretch p-4 rounded">
+                    <div class="col-auto position-relative pe-0">
+                        <div class="vertical-line-container">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Experience</h3>
+                        <p>
+                            ZF Group, 8900 Ypres <br>(Internship: October 2024 – January 2025)<br>
+                            Full-stack Software Engineer
+                        </p>
+                        <p>
+                            During my internship at ZF in Ypres, I independently conducted research on GraphQL APIs/queries 
+                            and successfully integrated them into an existing application. I also gained experience 
+                            with microservices in .NET Core and React.js, and worked within an Agile (Scrum) team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 pt-5">
+                <div class="info d-flex align-items-stretch p-4 rounded">
+                    <div class="col-auto position-relative pe-0">
+                        <div class="vertical-line-container">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Personal Info</h3>
+                        <p>- Nationality: Belgian </p>
+                        <p>- Date of Birth: March 1, 1985 </p>
+                        <p>- Residence: 8690 Alveringem </p>
+                        <p>- Driver’s License: B </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 pt-5">
+                <div class="info d-flex align-items-stretch p-4 rounded">
+                    <div class="col-auto position-relative pe-0">
+                        <div class="vertical-line-container">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Languages</h3>
+                        <p>- Dutch</p>
+                        <p>- English</p>
+                        <p>- French</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

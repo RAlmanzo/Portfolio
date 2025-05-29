@@ -1,0 +1,148 @@
+.body-wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: start;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'nav'
+        'main'
+        'footer';
+}
+
+nav {
+    grid-area: nav;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
+}
+
+.sideMenu {
+    display: none;
+}
+
+main {
+    grid-area: main;
+    height: 100%;
+    padding-top: 3.5em;
+    color: limegreen;
+    background-image: url('/assets/images/home-page.png');
+    background-size: cover;
+}
+
+.menu {
+    position: fixed;
+    border-radius: 5%;
+    left: -250px;
+    width: 250px;
+    height: 75%;
+    background-color: black;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 1050;
+    font-size: 1.2em;
+}
+  
+.menu.open {
+    left: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: limegreen;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    color: limegreen;
+    background-color: black;
+}
+
+footer img {
+    width: 35px;
+    height: 30px;
+}
+
+footer small {
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-left: 10px;
+}
+
+.footer-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .body-wrapper {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'nav main';
+    }
+
+    nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: black;
+        position: sticky;
+        top: 0;
+        align-self: start;
+        z-index: 1000;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: auto;
+        text-align: center;
+        padding: 1rem;
+        color: white;
+    }
+
+    .sideMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+        color: limegreen;
+        font-size: 1.2em;
+    }
+
+    .footer-menu img {
+        width: 2em;
+        height: 2em;
+    }
+
+    .footer-menu small {
+        color: limegreen;
+    }
+
+    button {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}

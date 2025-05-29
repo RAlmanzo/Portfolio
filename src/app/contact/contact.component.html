@@ -1,0 +1,55 @@
+<div class="container align-content-center min-vh-100">
+  <div class="row justify-content-center">
+    <div class="col-8 text-center mb-3">
+        <h3 #animatedText></h3>
+    </div>
+    <div class="col-8 text-center mb-5 d-flex justify-content-center gap-4">
+        <div>
+            <a href="https://www.linkedin.com/in/rosseel-almanzo-5241172ba/" target="_blank" rel="noopener" style="text-decoration: none;">
+                <img src="assets/images/Linkedin.png" width="32" height="32">
+                <span class="ms-2" style="text-decoration: none; color: limegreen;">Almanzo Rosseel</span>
+            </a>
+        </div>
+        
+        <div>
+            <img src="assets/images/mail.png" width="32" height="32">
+            <span class="ms-2">ralmanzo&#64;gmail.com</span>
+        </div> 
+
+        <div>
+            <img src="assets/images/phone.png" width="32" height="32">
+            <span class="ms-2">+32 494/62.30.25</span>
+        </div> 
+    </div>
+
+    <div class="col-8 text-center mb-3">
+        <p>Or send a message</p>
+    </div>
+
+    <form class="col-8" style="border: 2px solid limegreen; border-radius: 2%;">
+        <form action="https://mijnapi" method="POST">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input  type="text" name="name" id="name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message">Message</label>
+                <textarea type="text" name="message" id="message" rows="5" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2">Send</button>
+        </form>
+    </form>
+  </div>
+</div>
