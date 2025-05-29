@@ -1,4 +1,4 @@
-<div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+<div class="container projects-container d-flex flex-column justify-content-center align-items-center min-vh-100">
     <div class="row projects align-items-center">
         <div class="col-12 col-md-6 order-2 order-md-1">
             <h3>Personal Portfolio</h3>
@@ -15,13 +15,12 @@
         </div>
 
         <div class="col-12 col-md-6 order-1 order-md-2">
-            <div class="carousel-container position-relative">
-                @for (img of portfolioImages; let i = $index; track i) {
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[0]; track $index; let i = $index) {
                     <img
-                        id="img-{{i}}"
-                        src="{{img}}"
-                        class="carousel-image"
-                        alt="carousel image"
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
                     />
                 }
             </div>
@@ -44,13 +43,12 @@
         </div>
 
         <div class="col-12 col-md-6 order-1 order-md-2">
-            <div class="carousel-container position-relative">
-                @for (img of liveSportsImages; let i = $index; track i) {
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[1]; track $index; let i = $index) {
                     <img
-                        id="img-{{i}}"
-                        src="{{img}}"
-                        class="carousel-image"
-                        alt="carousel image"
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
                     />
                 }
             </div>
@@ -73,18 +71,17 @@
             <p class="dotted">Frontend: ASP.NET Core MVC, HTML5, CSS, Bootstrap, Vue2</p>
             <p class="dotted">
                 Backend: C#, ASP.NET Core Web API (REST), Swagger, Microsoft Identity, EF Core (ORM), Microsoft SQL Server, 
-                Clean Architecture, Anotation Validation
+                Clean Architecture, Anotation Validation, Xunit
             </p>
         </div>
 
         <div class="col-12 col-md-6 order-1 order-md-2">
-            <div class="carousel-container position-relative">
-                @for (img of sniffHikesWebAppImages; let i = $index; track i) {
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[2]; track $index; let i = $index) {
                     <img
-                        id="img-{{i}}"
-                        src="{{img}}"
-                        class="carousel-image"
-                        alt="carousel image"
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
                     />
                 }
             </div>
@@ -108,18 +105,17 @@
                 cross-platform design, user interaction, and backend integration.
             </p>
             <h5>Tech Stack:</h5>
-            <p class="dotted">Frontend: C#, Xamarin Forms (Android, Windows), MVVM, XAML, Databinding</p>
+            <p class="dotted">Frontend: C#, Xamarin Forms (Android, Windows), MVVM, XAML, Databinding, Xunit</p>
             <p class="dotted">Backend: C# GraphQL API (...in progress), Hotchocolate .NET, Firebase Cloud DB</p>
         </div>
 
         <div class="col-12 col-md-6 order-1 order-md-2">
-            <div class="carousel-container position-relative">
-                @for (img of sniffHikesMobileAppImages; let i = $index; track i) {
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[3]; track $index; let i = $index) {
                     <img
-                        id="img-{{i}}"
-                        src="{{img}}"
-                        class="carousel-image"
-                        alt="carousel image"
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
                     />
                 }
             </div>
