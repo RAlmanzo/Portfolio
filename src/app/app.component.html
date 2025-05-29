@@ -1,6 +1,6 @@
 <div class="body-wrapper">
   <nav>
-    <button class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
+    <button #menuButton class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
 
     <div class="sideMenu">
       <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-4" width="165" height="175">
@@ -32,7 +32,7 @@
   </nav>
   
   <main class="pt-lg-0">
-    <div class="menu" [class.open]="menuOpen">
+    <div #menu class="menu" [class.open]="menuOpen">
       <div class="d-flex flex-column align-items-center text-center mt-4">
         <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-3" width="115" height="125">
 
@@ -47,11 +47,11 @@
       </div>
 
       <nav>
-        <a routerLink="/">Home</a>
-        <a routerLink="/about">About me</a>
-        <a routerLink="/resume">Resume</a>
-        <a routerLink="/projects">Projects</a>
-        <a routerLink="/contact">Contact</a>
+        <a routerLink="/" (click)="toggleMenu()">Home</a>
+        <a routerLink="/about" (click)="toggleMenu()">About me</a>
+        <a routerLink="/resume"(click)="toggleMenu()">Resume</a>
+        <a routerLink="/projects" (click)="toggleMenu()">Projects</a>
+        <a routerLink="/contact" (click)="toggleMenu()">Contact</a>
       </nav>
     </div>
 
