@@ -23,7 +23,7 @@ export class ChartBarBuilderService {
             ticks: { 
               color: 'white',
               font: {
-                size: 14
+                size: window.innerWidth < 768 ? 8 : 14
               } 
             }
           },
@@ -31,7 +31,7 @@ export class ChartBarBuilderService {
             ticks: { 
               color: 'white',
               font: {
-                size: 14
+                size: window.innerWidth < 768 ? 9 : 14
               } 
             }
           }
