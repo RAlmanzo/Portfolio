@@ -1,4 +1,4 @@
-import { Injectable, Renderer2 } from '@angular/core';
+import { ElementRef, Injectable, Renderer2 } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
 
 @Injectable({
@@ -93,5 +93,49 @@ export class AnimatorService {
     });
   }
 
-  
+  startTextTyping(elRef: ElementRef, text: string, renderer: Renderer2): void {
+    const el = elRef.nativeElement;
+    el.innerHTML = '';
+    const typingSpeed = 200;
+
+    const cursor = renderer.createElement('span');
+    renderer.addClass(cursor, 'cursor');
+    cursor.textContent = '|';
+    renderer.appendChild(el, cursor);
+
+    let index = 0;
+
+    const interval = setInterval(() => {
+      if (text.substring(index, index + 4) === '<br>') {
+        const br = renderer.createElement('br');
+        renderer.insertBefore(el, br, cursor);
+        index += 4;
+        return;
+      }
+
+      if (index < text.length) {
+        const span = renderer.createElement('span');
+        const char = text.charAt(index);
+        const textNode = renderer.createText(char === ' ' ? '\u00A0' : char);
+        renderer.appendChild(span, textNode);
+        renderer.insertBefore(el, span, cursor);
+
+        renderer.setStyle(span, 'opacity', '0');
+        renderer.setStyle(span, 'display', 'inline-block');
+
+        anime({
+          targets: span,
+          opacity: [0, 1],
+          translateY: [10, 0],
+          duration: 500,
+          easing: 'easeOutExpo'
+        });
+
+        index++;
+      } else {
+        clearInterval(interval);
+        renderer.removeChild(el, cursor);
+      }
+    }, typingSpeed);
+  }
 }
