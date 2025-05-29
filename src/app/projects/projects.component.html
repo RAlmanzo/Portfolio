@@ -1,0 +1,148 @@
+<div class="container projects-container d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <div class="row projects align-items-center">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <h3>Personal Portfolio</h3>
+            <figure>
+                <a href="https://github.com/RAlmanzo/Portfolio" target="_blank" rel="noopener">
+                    <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
+                </a>
+                <figcaption>GitHub Repo</figcaption>
+            </figure>
+            <h5>Description:</h5>
+            <p>
+                This website is my personal portfolio, where I introduce myself, showcase my skills, 
+                and provide an overview of my projects. Visitors can contact me through the site and view my code on GitHub. 
+                I designed and built this website entirely by myself, with a focus on responsive design and user-friendliness. 
+                It’s a living project that I continuously improve as my experience and knowledge grow.
+            </p>
+            <h5>Tech Stack:</h5>
+            <p class="dotted">Frontend: Angular 19, Typescript, HTML5, CSS, Bootstrap, Anime.js, Chart.js, GitHub Pages</p>
+            <p class="dotted">Backend: ...in progress: C#, ASP.NETCore Web API, MongoDB, Microsoft Azure</p>
+        </div>
+
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[0]; track $index; let i = $index) {
+                    <img
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
+                    />
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row projects align-items-center pt-5">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <h3>Live sports report</h3>
+            <figure>
+                <a href="https://github.com/RAlmanzo/Livesports" target="_blank" rel="noopener">
+                    <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
+                </a>
+                <figcaption>GitHub Repo</figcaption>
+            </figure>
+            <h5>Description:</h5>
+            <p>
+                As a school project, I developed a web application that allows a reporter to provide live coverage of a kayak 
+                competition. Users can register for a race in advance and follow the event live through the app. 
+                The application was built with a focus on real-time interaction, user-friendly design, 
+                and registration functionality. This project taught me how to build a dynamic, 
+                component-based single-page web environment with multiple user roles (reporter and audience).
+            </p>
+            <h5>Tech Stack:</h5>
+            <p class="dotted">C#, Blazor (Server), Razor Pages, SignalR, HTML5, Bootstrap</p>
+        </div>
+
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[1]; track $index; let i = $index) {
+                    <img
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
+                    />
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row projects align-items-center pt-5">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <h3>SniffHikes Web app</h3>   
+            <figure>
+                <a href="https://github.com/RAlmanzo/SniffHikes-Web-App" target="_blank" rel="noopener">
+                    <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
+                </a>
+                <figcaption>GitHub Repo</figcaption>
+            </figure> 
+            <h5>Description:</h5>
+            <p>
+                This web application is designed for people who enjoy hiking in nature with their dogs. After registering, users can create 
+                and share hiking events and routes, as well as leave comments on posts from others. 
+                The backend is built using an ASP.NET Core Web API, with API documentation provided via Swagger for structured and 
+                accessible endpoint reference. The application also includes an admin section that allows management of users, events, routes, 
+                and comments to ensure smooth moderation and control. This project combines frontend and backend development, and taught me 
+                how to implement user authentication/authorization, CRUD operations, and API integration within the .NET ecosystem.
+            </p>
+            <h5>Tech Stack:</h5>
+            <p class="dotted">Frontend: ASP.NET Core MVC, HTML5, CSS, Bootstrap, Vue2</p>
+            <p class="dotted">
+                Backend: C#, ASP.NET Core Web API (REST), Swagger, Microsoft Identity, EF Core (ORM), Microsoft SQL Server, 
+                Clean Architecture, Anotation Validation, Xunit
+            </p>
+        </div>
+
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[2]; track $index; let i = $index) {
+                    <img
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
+                    />
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row projects align-items-center pt-5">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <h3>SniffHikes Mobile app (Android/ Windows)</h3>
+            <figure>
+                <a href="https://github.com/RAlmanzo/SniffHikes-Mobile-App" target="_blank" rel="noopener">
+                    <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
+                </a>
+                <figcaption>GitHub Repo</figcaption>
+            </figure> 
+            <h5>Description:</h5>
+            <p>
+                As an extension of my hiking web application, I developed a cross-platform mobile app using Xamarin.Forms targeting 
+                Android and Windows devices. This app enables registered users to share and explore hiking events and routes tailored 
+                for dog owners. Users can post comments, view detailed addresses, and access route navigation via maps or apps like Waze. 
+                The app also allows users to register for events, manage their profiles—including adding their dogs—and discover hiking 
+                zones in Belgium specifically suitable for dogs, with the ability to share experiences through comments.
+
+                A key feature(wich is still in progress) is the ability to record their own hikes, share these routes with the community, 
+                and receive feedback. Additionally, the app includes an admin section for managing users, events, routes, and content, 
+                ensuring smooth operation and community moderation. This project demonstrates my skills in mobile development, 
+                cross-platform design, user interaction, and backend integration.
+            </p>
+            <h5>Tech Stack:</h5>
+            <p class="dotted">Frontend: C#, Xamarin Forms (Android, Windows), MVVM, XAML, Databinding, Xunit</p>
+            <p class="dotted">Backend: C# GraphQL API (...in progress), Hotchocolate .NET, Firebase Cloud DB</p>
+        </div>
+
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div #imageContainer class="image-container">
+                @for (image of imageSets[3]; track $index; let i = $index) {
+                    <img
+                    [src]="image"
+                    [class.active]="i === currentIndexes[i]"
+                    [class.inactive]="i !== currentIndexes[i]"
+                    />
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,7 +4,7 @@ import anime from 'animejs/lib/anime.es.js';
 @Injectable({
   providedIn: 'root'
 })
-export class TextAnimatorService {
+export class AnimatorService {
 
   constructor() { }
 
@@ -35,5 +35,31 @@ export class TextAnimatorService {
         });
       });
     });
+  }
+
+  startImageAnimationLoop(container: HTMLElement, imageCount: number, onIndexChange: (index: number) => void) {
+    let currentIndex = 0;
+    const duration = 5000;
+    const fadeDuration = 1500;
+
+    const animate = () => {
+      const images = container.querySelectorAll('img');
+
+      anime({
+        targets: images,
+        opacity: (_el: HTMLElement, i: number) => (i === currentIndex ? 1 : 0),
+        duration: fadeDuration,
+        easing: 'easeInOutQuad',
+        complete: () => {
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % imageCount;
+            onIndexChange(currentIndex);
+            animate();
+          }, duration - fadeDuration);
+        },
+      });
+    };
+
+    animate();
   }
 }

@@ -20,17 +20,18 @@
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/about">About me</a></li>
         <li><a routerLink="/resume">Resume</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
         <li><a routerLink="/contact">Contact</a></li>
       </ul>  
     </div>
+
     <div class="footer-menu">
       <img src="assets/images/MinARlogo.jpg" alt="logo made by owner Almanzo">
       <small>&copy; All rights reserved.</small>
     </div>
   </nav>
   
-  <main>
+  <main class="pt-lg-0">
     <div class="menu" [class.open]="menuOpen">
       <div class="d-flex flex-column align-items-center text-center mt-4">
         <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-3" width="115" height="125">
@@ -49,7 +50,7 @@
         <a routerLink="/">Home</a>
         <a routerLink="/about">About me</a>
         <a routerLink="/resume">Resume</a>
-        <a href="">Projects</a>
+        <a routerLink="/projects">Projects</a>
         <a routerLink="/contact">Contact</a>
       </nav>
     </div>

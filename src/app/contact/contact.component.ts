@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { TextAnimatorService } from '../services/text-animator.service';
+import { AnimatorService } from '../services/animator.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +14,7 @@ export class ContactComponent {
 
   constructor(
     private renderer: Renderer2,
-    private textAnimator: TextAnimatorService
+    private textAnimator: AnimatorService
   ){}
 
   ngAfterViewInit() {

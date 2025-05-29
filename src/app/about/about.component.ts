@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
-import { TextAnimatorService } from '../services/text-animator.service';
+import { AnimatorService } from '../services/animator.service';
 import anime from 'animejs/lib/anime.es.js';
 
 type Position = 'left' | 'center' | 'right';
@@ -24,13 +24,19 @@ export class AboutComponent implements AfterViewInit {
 
   constructor(
     private renderer: Renderer2,
-    private textAnimator: TextAnimatorService
+    private textAnimator: AnimatorService
   ) {}
 
   ngAfterViewInit() {
     this.textAnimator.animateText(this.aboutTitle, this.animatedText.nativeElement, this.renderer);
     this.animatePositions();
     this.intervalId = setInterval(() => this.nextSlide(), 4000);
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 
   nextSlide() {

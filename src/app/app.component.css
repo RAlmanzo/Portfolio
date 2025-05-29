@@ -12,14 +12,14 @@
         'nav'
         'main'
         'footer';
-    background: linear-gradient(to bottom, #0b1d3a, #6e84e4);
-    background-repeat:repeat-y;
-    background-size: cover;
 }
 
 nav {
     grid-area: nav;
     padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
 }
 
 .sideMenu {
@@ -29,7 +29,10 @@ nav {
 main {
     grid-area: main;
     height: 100%;
+    padding-top: 3.5em;
     color: limegreen;
+    background-image: url('/assets/images/home-page.png');
+    background-size: cover;
 }
 
 .menu {
@@ -80,7 +83,7 @@ footer small {
   display: none;
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 992px) {
     .body-wrapper {
         display: grid;
         grid-template-columns: auto 1fr;
