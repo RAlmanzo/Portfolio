@@ -62,4 +62,36 @@ export class AnimatorService {
 
     animate();
   }
+
+  startImagesCarousel(images: string[], positions: string[]) {
+    images.forEach((_, i) => {
+      const pos = positions[i];
+      const imgEl = document.getElementById(`img-${i}`);
+      if (!imgEl) return;
+
+      let targetProps: {translateX: number, scale: number, opacity: number, zIndex: number};
+
+      if (pos === 'center') {
+        targetProps = { translateX: 0, scale: 1, opacity: 1, zIndex: 3 };
+      } else if (pos === 'left') {
+        targetProps = { translateX: -110, scale: 0.8, opacity: 0.3, zIndex: 1 };
+      } else {
+        targetProps = { translateX: 110, scale: 0.8, opacity: 0.3, zIndex: 1 };
+      }
+
+      anime({
+        targets: imgEl,
+        translateX: targetProps.translateX,
+        scale: targetProps.scale,
+        opacity: targetProps.opacity,
+        duration: 800,
+        easing: 'easeInOutQuad',
+        update(anim) {
+          imgEl.style.zIndex = String(targetProps.zIndex);
+        }
+      });
+    });
+  }
+
+  
 }
