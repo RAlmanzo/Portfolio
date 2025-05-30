@@ -11,6 +11,7 @@ export class AppComponent {
   @ViewChild('menu') menuRef!: ElementRef;
   @ViewChild('menuButton') menuButtonRef!: ElementRef;
 
+  backgroundImage = 'assets/images/home-page.png';
   menuOpen = false;
 
   toggleMenu(){
