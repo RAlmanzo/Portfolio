@@ -1,7 +1,7 @@
 .projects {
   width: 99%;
   min-height: 100vh;
-  background-image: url('assets/images/home-page.png');
+  background-image: url('../../assets/images/home-page.png');
   background-size: cover;
   border-bottom: 2px solid limegreen;
 }
