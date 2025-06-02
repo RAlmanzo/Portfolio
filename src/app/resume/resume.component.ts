@@ -38,4 +38,11 @@ export class ResumeComponent implements AfterViewInit{
   toggleBarCharts(value:string){
     this.barChart = value;
   }
+
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/documents/CV_Almanzo-Rosseel.pdf';
+    link.download = 'Mijn_CV.pdf';
+    link.click();
+  }
 }
