@@ -1,0 +1,125 @@
+{
+  "configVersion": 1,
+  "timestamp": 1748874466827,
+  "index": "/Portfolio/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Portfolio/favicon.ico",
+        "/Portfolio/index.html",
+        "/Portfolio/main-XEPHS5FA.js",
+        "/Portfolio/manifest.webmanifest",
+        "/Portfolio/polyfills-FFHMD2TL.js",
+        "/Portfolio/styles-KWB3CJTC.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Portfolio/assets/images/Linkedin.png",
+        "/Portfolio/assets/images/MinARlogo.jpg",
+        "/Portfolio/assets/images/github.png",
+        "/Portfolio/assets/images/hiken.jpg",
+        "/Portfolio/assets/images/hiken2.jpg",
+        "/Portfolio/assets/images/home-page.png",
+        "/Portfolio/assets/images/mail.png",
+        "/Portfolio/assets/images/me.jpg",
+        "/Portfolio/assets/images/phone.png",
+        "/Portfolio/assets/images/portfolio1.png",
+        "/Portfolio/assets/images/portfolio2.png",
+        "/Portfolio/assets/images/profile-menu.png",
+        "/Portfolio/assets/images/profile-picture.png",
+        "/Portfolio/assets/images/reporter.png",
+        "/Portfolio/assets/images/sniffhikesWebApp.png",
+        "/Portfolio/assets/images/sniffhikesWebApp2.png",
+        "/Portfolio/assets/images/sniffhikesWebApp3.png",
+        "/Portfolio/assets/images/sniffhikesWebApp4.png",
+        "/Portfolio/assets/images/sniffhikesmob1.png",
+        "/Portfolio/assets/images/sniffhikesmob2.png",
+        "/Portfolio/assets/images/sniffhikesmob3.png",
+        "/Portfolio/assets/images/user.png",
+        "/Portfolio/icons/icon-128x128.png",
+        "/Portfolio/icons/icon-144x144.png",
+        "/Portfolio/icons/icon-152x152.png",
+        "/Portfolio/icons/icon-192x192.png",
+        "/Portfolio/icons/icon-384x384.png",
+        "/Portfolio/icons/icon-512x512.png",
+        "/Portfolio/icons/icon-72x72.png",
+        "/Portfolio/icons/icon-96x96.png",
+        "/Portfolio/media/home-page-3QCGYWXN.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Portfolio/assets/images/Linkedin.png": "c4c7321e9048be40cd149680202ef0b45a435da5",
+    "/Portfolio/assets/images/MinARlogo.jpg": "134573eb4761769e7a7f9b72fc2f5186ca43c543",
+    "/Portfolio/assets/images/github.png": "cefc61758a8e88a2886313d70cbeafea55ce7481",
+    "/Portfolio/assets/images/hiken.jpg": "ed90a182dae61c8d949ac7393ef89ae9c185a4ee",
+    "/Portfolio/assets/images/hiken2.jpg": "6f8fa5d3862b55cf387956d17eba37824e3c0e02",
+    "/Portfolio/assets/images/home-page.png": "1a51830525aab98218e45d243665495e5b3f27ed",
+    "/Portfolio/assets/images/mail.png": "4478ca52c7ffbabfcce73eb8f0d7b51a5c0e9623",
+    "/Portfolio/assets/images/me.jpg": "f203b17c50cce16e6d394a284104aa39550a7672",
+    "/Portfolio/assets/images/phone.png": "a99fc30820a735851b623a3d16ae9c7065bafcfc",
+    "/Portfolio/assets/images/portfolio1.png": "9801f6b31861db6760316c1756562c0722d1bbaa",
+    "/Portfolio/assets/images/portfolio2.png": "0dcd628fec980a91d207b206b904bb7d4ee9cef7",
+    "/Portfolio/assets/images/profile-menu.png": "49f1d0b365ca6876e4335ece6910fd1811cdb641",
+    "/Portfolio/assets/images/profile-picture.png": "d3c324bbd1794cf378edf8111faf07adc7f15a5b",
+    "/Portfolio/assets/images/reporter.png": "bb48ad871c15ac8f88752fe31553f381126c0b39",
+    "/Portfolio/assets/images/sniffhikesWebApp.png": "c6e452c917ec3043cf3e83100acdd13e1ffa7f4e",
+    "/Portfolio/assets/images/sniffhikesWebApp2.png": "d7c3141841dc106cf9452322c47a887cb4c012e6",
+    "/Portfolio/assets/images/sniffhikesWebApp3.png": "635930ce03d525d52421ad95e9b3632a5bca33da",
+    "/Portfolio/assets/images/sniffhikesWebApp4.png": "5c35efbd1ca91d571e8db807b4b9eda49bae839c",
+    "/Portfolio/assets/images/sniffhikesmob1.png": "2b696c4485f8c34d02a5c5e429d907011921e006",
+    "/Portfolio/assets/images/sniffhikesmob2.png": "3cfb20014295baa4fc1ba48470df40b730105f3a",
+    "/Portfolio/assets/images/sniffhikesmob3.png": "7f56ece3536cc3d108a7b788b44ee754bddf4e9c",
+    "/Portfolio/assets/images/user.png": "c3e331b345eb95dd842dead62e78c87d0b504ba1",
+    "/Portfolio/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/Portfolio/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/Portfolio/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/Portfolio/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/Portfolio/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/Portfolio/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/Portfolio/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/Portfolio/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/Portfolio/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/Portfolio/index.html": "aae212c9b9114747c1ea75da6bfe57a726f8f2da",
+    "/Portfolio/main-XEPHS5FA.js": "930ea26a1fee6cf7fe22de83802c46b00838abec",
+    "/Portfolio/manifest.webmanifest": "453c9d8dd177aa1fb25a7053f4cfca6bd7be752e",
+    "/Portfolio/media/home-page-3QCGYWXN.png": "1a51830525aab98218e45d243665495e5b3f27ed",
+    "/Portfolio/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "/Portfolio/styles-KWB3CJTC.css": "a6ad2a1ab63a8335431dc0f9fb26334a789a6df5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
