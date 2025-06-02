@@ -10,7 +10,4 @@ body {
     margin: 0;
     padding: 0;
     color: limegreen;
-    background: linear-gradient(to bottom, #0b1d3a, #6ec1e4);
-    background-repeat:repeat-y;
-    background-size: cover;
 }
