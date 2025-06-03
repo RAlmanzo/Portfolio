@@ -94,6 +94,7 @@ footer small {
         height: 50px;
         gap: 1rem;
         padding: 1rem;
+        border-bottom: 1px outset limegreen;
     }
 
     nav h3 {
@@ -144,6 +145,7 @@ footer small {
         height: 50px;
         gap: 1rem;
         padding: 1rem;
+        border-bottom: 1px outset limegreen;
     }
 
     nav h3 {
@@ -204,6 +206,7 @@ footer small {
         top: 0;
         align-self: start;
         z-index: 1000;
+        border-right: 1px outset limegreen;
     }
 
     nav h3 {
