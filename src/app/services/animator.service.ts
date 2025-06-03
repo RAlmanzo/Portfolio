@@ -39,7 +39,7 @@ export class AnimatorService {
 
   startImageAnimationLoop(container: HTMLElement, imageCount: number, onIndexChange: (index: number) => void) {
     let currentIndex = 0;
-    const duration = 5000;
+    const duration = 4000;
     const fadeDuration = 1500;
 
     const animate = () => {
