@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@ang
 import { AnimatorService } from '../services/animator.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { EmailService } from '../services/api/email.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +13,7 @@ import { EmailService } from '../services/api/email.service';
 export class ContactComponent implements AfterViewInit {
   @ViewChild('animatedText') animatedText!: ElementRef;
 
-  contactTitle = "Contact Me"
+  contactTitle = "Contact Me";
   contactForm!: FormGroup;
   submitted = false;
 
@@ -20,7 +21,8 @@ export class ContactComponent implements AfterViewInit {
     private renderer: Renderer2,
     private textAnimator: AnimatorService,
     private fb: FormBuilder,
-    private emailService: EmailService
+    private emailService: EmailService,
+    private toastrService: ToastrService
   ){
     this.initiateForm();
   }
@@ -43,11 +45,13 @@ export class ContactComponent implements AfterViewInit {
     if (this.contactForm.valid) {
       this.emailService.sendMessage(this.contactForm.value).subscribe({
         next: (response: any) => {
-          this.submitted = false,
+          this.submitted = false;
+          this.toastrService.success(response.message, "Succes");
           this.contactForm.reset();
         },
         error: (error) => {
-          console.log(error)
+          this.toastrService.error("An error has occured, please try again or contact me with above links!", "Error");
+          console.log(error);
         }
       });
     }
