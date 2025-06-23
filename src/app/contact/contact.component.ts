@@ -16,6 +16,7 @@ export class ContactComponent implements AfterViewInit {
   contactTitle = "Contact Me";
   contactForm!: FormGroup;
   submitted = false;
+  isLoading = false;
 
   constructor(
     private renderer: Renderer2,
@@ -43,15 +44,19 @@ export class ContactComponent implements AfterViewInit {
   onSubmit() {
     this.submitted = true;
     if (this.contactForm.valid) {
+      this.isLoading = true;
+
       this.emailService.sendMessage(this.contactForm.value).subscribe({
         next: (response: any) => {
           this.submitted = false;
           this.toastrService.success(response.message, "Succes");
           this.contactForm.reset();
+          this.isLoading = false;
         },
         error: (error) => {
           this.toastrService.error("An error has occured, please try again or contact me with above links!", "Error");
           console.log(error);
+          this.isLoading = false;
         }
       });
     }
