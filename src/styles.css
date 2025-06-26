@@ -9,5 +9,18 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    color: limegreen;
+}
+
+main h1 span, h2 span, h3 span {
+    background: radial-gradient(ellipse ,limegreen , yellow, orange, red, white, white);
+    background-size: 400% 400%;
+    background-clip: text;
+    color: transparent;
+    animation: heading 10s linear infinite;
+}
+
+@keyframes heading {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
