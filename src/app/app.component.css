@@ -33,7 +33,7 @@ main {
     grid-area: main;
     height: 100%;
     padding-top: 3.5em;
-    color: limegreen;
+    color: whitesmoke;
     background-size: cover;
 }
 
@@ -58,7 +58,7 @@ nav a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: limegreen;
+    color: whitesmoke;
 }
 
 footer {
@@ -66,7 +66,7 @@ footer {
     display: flex;
     width: 100%;
     text-align: left;
-    color: limegreen;
+    color: whitesmoke;
     background-color: black;
 }
 
@@ -231,7 +231,6 @@ footer small {
         margin-top: auto;
         text-align: center;
         padding: 1rem;
-        color: white;
     }
 
     .sideMenu {
@@ -240,7 +239,7 @@ footer small {
         align-items: center;
         text-align: center;
         margin-top: 1rem;
-        color: limegreen;
+        color: whitesmoke;
         font-size: 1.2em;
     }
 
@@ -250,7 +249,7 @@ footer small {
     }
 
     .footer-menu small {
-        color: limegreen;
+        color: whitesmoke;
     }
 
     button {
