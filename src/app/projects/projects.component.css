@@ -8,11 +8,13 @@
 
 h2 {
   text-align: start;
-  padding: 15px;
+  margin: 15px;
 }
 
-h2 span {
-  text-decoration: underline;
+h3 {
+  text-align: center;
+  margin: 35px;
+  padding: 0;
 }
 
 h5 {
