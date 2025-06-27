@@ -18,7 +18,7 @@
 
 nav {
     grid-area: nav;
-    min-height: 8%;
+    height: auto;
     padding: 10px;
     position: fixed;
     z-index: 1000;
