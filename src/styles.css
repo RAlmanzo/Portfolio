@@ -11,7 +11,11 @@ body {
     padding: 0;
 }
 
-main h1 span, h2 span, h3 span {
+main h2 span {
+    font-size: 1.5em;
+}
+
+main h1 span, h2 span {
     background: radial-gradient(ellipse ,limegreen , yellow, orange, red, white, white);
     background-size: 400% 400%;
     background-clip: text;
