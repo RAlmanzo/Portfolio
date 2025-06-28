@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { ChartBarBuilderService } from '../../services/chart-builder.service';
 
 @Component({
@@ -7,7 +7,9 @@ import { ChartBarBuilderService } from '../../services/chart-builder.service';
   templateUrl: './databases-query-languages-bar-chart.component.html',
   styleUrl: './databases-query-languages-bar-chart.component.css'
 })
-export class DatabasesQueryLanguagesBarChartComponent implements AfterViewInit {
+export class DatabasesQueryLanguagesBarChartComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('skillsCanvas', { static: false }) canvasRef!: ElementRef<HTMLCanvasElement>;
+
   chart:any;
   labels = [
     "MS SQL Server (Relational)",
@@ -34,6 +36,12 @@ export class DatabasesQueryLanguagesBarChartComponent implements AfterViewInit {
   constructor(private chartBarBuilder: ChartBarBuilderService,) {}
 
   ngAfterViewInit(): void {
-    this.chart = this.chartBarBuilder.createBarChart(this.chartBarData);
+    this.chart = this.chartBarBuilder.createBarChart(this.chartBarData, this.canvasRef.nativeElement);
+  }
+
+  ngOnDestroy(): void {
+    if (this.chart) {
+      this.chart.destroy();
+    }
   }
 }
