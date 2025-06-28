@@ -6,11 +6,8 @@
 }
 
 h2 {
-    padding: 0 0 15px 10px;
-}
-
-h2 span {
-  text-decoration: underline;
+    text-align: center;
+    margin: 25px;
 }
 
 p {

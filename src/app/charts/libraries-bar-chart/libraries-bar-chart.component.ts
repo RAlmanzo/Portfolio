@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { ChartBarBuilderService } from '../../services/chart-builder.service';
 
 @Component({
@@ -7,7 +7,9 @@ import { ChartBarBuilderService } from '../../services/chart-builder.service';
   templateUrl: './libraries-bar-chart.component.html',
   styleUrl: './libraries-bar-chart.component.css'
 })
-export class LibrariesBarChartComponent implements AfterViewInit {
+export class LibrariesBarChartComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('skillsCanvas', { static: false }) canvasRef!: ElementRef<HTMLCanvasElement>;
+
   chart:any;
   labels = [
     "Bootstrap",
@@ -32,6 +34,12 @@ export class LibrariesBarChartComponent implements AfterViewInit {
   constructor(private chartBarBuilder: ChartBarBuilderService,) {}
 
   ngAfterViewInit(): void {
-    this.chart = this.chartBarBuilder.createBarChart(this.chartBarData);
+    this.chart = this.chartBarBuilder.createBarChart(this.chartBarData, this.canvasRef.nativeElement);
+  }
+
+  ngOnDestroy(): void {
+    if (this.chart) {
+      this.chart.destroy();
+    }
   }
 }

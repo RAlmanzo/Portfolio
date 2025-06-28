@@ -9,7 +9,7 @@ export class ChartBarBuilderService {
     Chart.register(...registerables);
   }
 
-  createBarChart(data:any): void {
+  createBarChart(data: any, canvasElement: HTMLCanvasElement): Chart {
     const config: ChartConfiguration<'bar'> = {
       type: 'bar',
       data: data,
@@ -44,6 +44,6 @@ export class ChartBarBuilderService {
       },
     };
 
-    new Chart('skillsChart', config);
+    return new Chart(canvasElement, config);
   }
 }
