@@ -17,7 +17,7 @@ export class LibrariesBarChartComponent implements AfterViewInit, OnDestroy {
     "Chart.js",
     "SignalR"
   ];
-  dataSetData = [65, 55, 55, 75];
+  dataSetData = [65, 55, 55, 65];
   backgroundColor = 'rgba(145, 255, 102, 0.2)';
   borderColor = 'rgb(105, 255, 102)';
 

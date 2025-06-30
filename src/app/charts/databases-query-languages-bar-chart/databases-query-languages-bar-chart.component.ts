@@ -19,7 +19,7 @@ export class DatabasesQueryLanguagesBarChartComponent implements AfterViewInit, 
     "SQL",
     "GraphQL Queries"
   ];
-  dataSetData = [85, 75, 75, 90, 75, 80];
+  dataSetData = [85, 65, 65, 85, 75, 80];
   backgroundColor = 'rgba(75, 192, 192, 0.2)';
   borderColor = 'rgb(75, 192, 192)';
 

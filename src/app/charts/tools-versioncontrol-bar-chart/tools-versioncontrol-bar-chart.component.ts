@@ -17,9 +17,11 @@ export class ToolsVersioncontrolBarChartComponent implements AfterViewInit, OnDe
     "Git",
     "Yarn",
     "Npm",
-    "Swagger"
+    "Swagger",
+    "Docker",
+    "Render"
   ];
-  dataSetData = [85, 75, 80, 65, 65, 90];
+  dataSetData = [85, 70, 80, 65, 65, 90, 60, 60];
   backgroundColor = 'rgba(255, 205, 86, 0.2)';
   borderColor = 'rgb(255, 205, 86)';
 
