@@ -24,7 +24,7 @@ export class FrameworksPlatformsBarChartComponent implements AfterViewInit, OnDe
     "Hot Chocolate (GraphQL C#)",
     "Xamarin Forms (MVVM)"
   ];
-  dataSetData = [90, 91, 91, 90, 90, 70, 50, 80, 85, 70, 85];
+  dataSetData = [80, 90, 90, 85, 85, 65, 50, 75, 85, 70, 85];
   backgroundColor = 'rgba(255, 159, 64, 0.2)';
   borderColor = 'rgb(255, 159, 64)';
 

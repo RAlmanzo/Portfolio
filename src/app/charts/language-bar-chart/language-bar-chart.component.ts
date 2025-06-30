@@ -12,7 +12,7 @@ export class LanguageBarChartComponent implements AfterViewInit, OnDestroy{
 
   chart:any;
   labels = ['C# (OOP)','JavaScript','TypeScript','HTML5','CSS'];
-  dataSetData = [90, 85, 75, 90, 90];
+  dataSetData = [90, 85, 70, 90, 85];
   backgroundColor = 'rgba(255, 99, 132, 0.2)';
   borderColor = 'rgb(255, 99, 132)';
 
