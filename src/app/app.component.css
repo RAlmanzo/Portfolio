@@ -16,6 +16,14 @@
         'footer';
 }
 
+main {
+    grid-area: main;
+    height: 100%;
+    padding-top: 3.5em;
+    color: whitesmoke;
+    background-size: cover;
+}
+
 nav {
     grid-area: nav;
     height: auto;
@@ -27,14 +35,6 @@ nav {
 
 .sideMenu {
     display: none;
-}
-
-main {
-    grid-area: main;
-    height: 100%;
-    padding-top: 3.5em;
-    color: whitesmoke;
-    background-size: cover;
 }
 
 .menu {
@@ -190,19 +190,27 @@ footer small {
 @media only screen and (min-width: 992px) {
     .body-wrapper {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 250px 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
             'nav main';
     }
 
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
     nav {
         grid-area: nav;
+        width: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 100%;
         background-color: black;
-        position: sticky;
         top: 0;
         align-self: start;
         z-index: 1000;
