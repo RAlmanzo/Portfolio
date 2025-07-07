@@ -7,6 +7,10 @@
   text-align: left;
 }
 
+.text-wrapper {
+  height: 200px;
+}
+
 h1 {
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   margin: 30px;
@@ -17,6 +21,9 @@ h2, h3 {
 }
 
 .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   width: 100%;
   max-width: 95%;
 }
