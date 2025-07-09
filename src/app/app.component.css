@@ -210,10 +210,8 @@ footer small {
         display: flex;
         flex-direction: column;
         height: 100%;
-        background-color: black;
-        top: 0;
+        background-color: black;   
         align-self: start;
-        z-index: 1000;
         border-right: 1px outset limegreen;
     }
 
