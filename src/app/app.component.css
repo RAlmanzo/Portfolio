@@ -19,6 +19,7 @@
 main {
     grid-area: main;
     height: 100%;
+    max-width: 100%;
     padding-top: 3.5em;
     color: whitesmoke;
     background-size: cover;
@@ -26,7 +27,7 @@ main {
 
 nav {
     grid-area: nav;
-    height: auto;
+    max-height: 100vh;
     padding: 10px;
     position: fixed;
     z-index: 1000;
@@ -200,7 +201,6 @@ footer small {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         padding: 0;
     }
 
