@@ -20,7 +20,7 @@ Online tutorials and guides
 
 Stack Overflow and other online resources
 
-# 🚀 Project Overview
+## 🚀 Project Overview
 
 This project helped me understand and apply:
 
@@ -38,9 +38,10 @@ This project helped me understand and apply:
 
 ✅ Styling with CSS and Bootstrap
 
-⚙️ Prerequisites & Setup
 
-📦 Requirements
+## ⚙️ Prerequisites & Setup
+
+### 📦 Requirements
 
 Node.js (v18+ recommended): Download Node.js
 
@@ -49,7 +50,7 @@ Angular CLI: Install globally via npm:
 npm install -g @angular/cli
 ```
 
-🛠️ Installation
+### 🛠️ Installation
 
 Clone the repository:
 
