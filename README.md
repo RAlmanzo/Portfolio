@@ -1,4 +1,5 @@
-💼 Personal Portfolio – Angular 19
+💼# Personal Portfolio – Angular 19
+
 This is my personal portfolio website, build using Angular 19. It includes the following pages:
 
 🏠 Home
