@@ -12,8 +12,9 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'resume', component: ResumeComponent },
     { path: 'projects', component: ProjectsComponent },
-    { path: 'contact', 
+    {
+        path: 'contact',
         loadComponent: () => import('./contact/contact.component')
-            .then( (c) => c.ContactComponent),
+            .then((c) => c.ContactComponent),
     },
 ];
