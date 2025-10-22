@@ -1,11 +1,48 @@
-<div class="home d-flex justify-content-center align-items-center">
-  <div class="text-wrapper col-md-6 flex-grow-1 text-center">
-    <h1 #animatedText></h1>
-    <h3 #typedText class="typed-text"></h3>
-    <h3 #typedJobTitle></h3>
-  </div>
+<section class="home position-relative min-vh-100 d-flex align-items-center">
+  <div class="container-fluid position-relative z-1">
+    <div class="row align-items-center justify-content-center gy-5">
+      <article class="col-md-6 text-center text-lg-start order-2 order-md-1">
+        <header class="mb-4">
+          <h1 #animatedText></h1>
+          <h3 #typedText></h3>
+          <h3 #typedJobTitle></h3>
+          <br>
+          <p #typedParagraph class="lead mt-4"></p>
+        </header>
 
-  <div class="img-wrapper col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0">
-    <img src="assets/images/profile-picture.png" alt="Profielfoto" class="img-fluid">
+        <div class="d-flex flex-column flex-sm-row align-items-center gap-3 mb-4 pt-4">
+          <a href="#projects" class="btn btn-primary btn-lg w-100 button-text">
+            View My Work →
+          </a>
+          <a href="#contact" class="btn btn-outline-primary btn-lg w-100 w-sm-auto button-text">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center justify-content-lg-start gap-4 pt-3">
+          <a href="https://github.com/RAlmanzo" target="_blank" rel="noopener noreferrer"
+            class="text-secondary hover-primary fs-4" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+            <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
+          </a>
+          <a href="https://www.linkedin.com/in/rosseel-almanzo-5241172ba/" target="_blank" rel="noopener noreferrer"
+            class="text-secondary hover-primary fs-4" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+            <img src="assets/images/Linkedin.png" alt="LinkedIn" width="32" height="32">
+          </a>
+          <a href="mailto:hello@example.com" class="text-secondary hover-primary fs-4" aria-label="Email">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </article>
+
+      <figure class="col-md-6 text-center order-1 order-md-2">
+        <div class="position-relative d-inline-block">
+          <div class="gradient-bg position-absolute top-0 start-0 w-100 h-100 rounded-circle"></div>
+          <img src="assets/images/profile-picture.png" alt="Profile photo"
+            class="img-fluid rounded-circle shadow-lg position-relative" />
+        </div>
+      </figure>
+    </div>
   </div>
-</div>
+</section>
