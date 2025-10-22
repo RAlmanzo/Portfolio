@@ -51,6 +51,7 @@ ul {
     position: fixed;
     border-radius: 5%;
     left: -250px;
+    top: 50px;
     width: 250px;
     height: 75%;
     background-color: black;
@@ -62,6 +63,7 @@ ul {
 
 .menu.open {
     left: 0;
+    top: 50px;
 }
 
 nav a {
