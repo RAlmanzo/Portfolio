@@ -1,4 +1,4 @@
-.home {
+/*.home {
   width: 100%;
   height: 100%;
   min-height: 0;
@@ -50,38 +50,66 @@ img {
   100% {
     opacity: 1;
   }
+}*/
+
+.home {
+  width: 100vw;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 300px;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom right, rgba(21, 156, 148, 0.3), rgba(31, 182, 255, 0.3));
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.hover-primary:hover {
+  color: oklch(0.65 0.2 180) !important;
+  transition: color 0.3s ease;
+}
+
+.button-text {
+  font-size: clamp(0.8rem, 2vw, 1.25rem)
 }
 
 @media only screen and (orientation: landscape) {
-  .home {
+  .home .row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
-  h1 {
-    font-size: clamp(1.5rem, 3vw, 3.5rem);
+  .home article,
+  .home figure {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
-  h2,
-  h3 {
-    font-size: clamp(1rem, 2.5vw, 3rem);
+  .home article {
+    order: 1 !important;
   }
 
-  img {
-    width: 50%;
-    max-width: 45%;
-  }
-}
-
-@media only screen and (min-height: 992px) {
-  .home {
-    flex-direction: row;
+  .home figure {
+    order: 2 !important;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-height: 992px) {}
+
+@media only screen and (min-width: 767px) {
   .home {
-    overflow: hidden;
+    width: 80vw;
   }
 
   h1 {
@@ -91,14 +119,5 @@ img {
   h2,
   h3 {
     font-size: clamp(1.5rem, 2vw, 3.5rem);
-  }
-
-  .text-wrapper {
-    width: 500px;
-  }
-
-  img {
-    width: 100%;
-    max-width: 100%;
   }
 }
