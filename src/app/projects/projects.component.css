@@ -1,9 +1,12 @@
 .projects {
   width: 99%;
   min-height: 100vh;
-  background-image: url('../../assets/images/home-page.png');
-  background-size: cover;
   border-bottom: 2px solid limegreen;
+  background: linear-gradient(135deg,
+      oklch(0.12 0.05 200),
+      oklch(0.15 0.08 180),
+      oklch(0.13 0.06 160),
+      oklch(0.14 0.07 190));
 }
 
 h2 {
