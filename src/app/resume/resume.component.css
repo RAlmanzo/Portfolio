@@ -1,6 +1,17 @@
 p {
-    font-size: clamp(0.5rem, 4vw, 1.5rem);
-    padding-left: 10px;
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
+  padding-left: 10px;
+}
+
+button {
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  border: 2px solid oklch(0.65 0.2 180);
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: oklch(0.65 0.2 180);
+  color: whitesmoke;
 }
 
 .vertical-line-container {
@@ -9,9 +20,9 @@ p {
 }
 
 .info {
-  border-bottom: 1px solid limegreen;
-  border-right: 1px solid limegreen;
-  border-top: 1px solid limegreen;
+  border-bottom: 1px solid oklch(0.65 0.2 180) !important;
+  border-right: 1px solid oklch(0.65 0.2 180) !important;
+  border-top: 1px solid oklch(0.65 0.2 180) !important;
   border-radius: 1rem;
 }
 
