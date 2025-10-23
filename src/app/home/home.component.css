@@ -21,13 +21,35 @@ header {
   z-index: 1;
 }
 
+.hover-primary {
+  color: whitesmoke !important;
+}
+
 .hover-primary:hover {
   color: oklch(0.65 0.2 180) !important;
   transition: color 0.3s ease;
 }
 
-.button-text {
-  font-size: clamp(0.8rem, 2vw, 1.25rem)
+.button-one {
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  background-color: oklch(0.65 0.2 180) !important;
+}
+
+.button-one,
+.button-two {
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  border: 2px solid oklch(0.65 0.2 180) !important;
+  color: white !important;
+}
+
+.button-one:hover {
+  background-color: oklch(0.55 0.18 160) !important;
+  color: white !important;
+}
+
+.button-two:hover {
+  background-color: oklch(0.55 0.18 160) !important;
+  color: white !important;
 }
 
 @media only screen and (orientation: landscape) {
