@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mt-5">
     <h2 #animatedText class="ms-3"></h2>
-    <button (click)="downloadCV()" class="btn btn-primary btn-sm me-3">Download CV</button>
+    <button (click)="downloadCV()" class="btn btn-sm me-3">Download CV</button>
 </div>
 
 <div class="container mt-4">
@@ -10,57 +10,69 @@
         </div>
 
         <div class="col-11 mb-3 text text-center">
-            <button (click)="toggleBarCharts('languagesChart')" class="btn btn-primary me-2 mb-2">Languages</button>
-            <button (click)="toggleBarCharts('frameworksPlatformsChart')" class="btn btn-primary me-2 mb-2">Frameworks & Platforms</button>
-            <button (click)="toggleBarCharts('librariesChart')" class="btn btn-primary me-2 mb-2">Libraries</button>
-            <button (click)="toggleBarCharts('databasesQueryLanguagesChart')" class="btn btn-primary me-2 mb-2">Databases & Query Languages</button>
-            <button (click)="toggleBarCharts('apisChart')" class="btn btn-primary me-2 mb-2">API's</button>
-            <button (click)="toggleBarCharts('toolsVersionControlChart')" class="btn btn-primary me-2 mb-2">Tools & Version Control</button>
+            <button (click)="toggleBarCharts('languagesChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'languagesChart' ? 'oklch(0.65 0.2 180)' : ''">Languages</button>
+            <button (click)="toggleBarCharts('frameworksPlatformsChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'frameworksPlatformsChart' ? 'oklch(0.65 0.2 180)' : ''">
+                Frameworks & Platforms
+            </button>
+            <button (click)="toggleBarCharts('librariesChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'librariesChart' ? 'oklch(0.65 0.2 180)' : ''">Libraries</button>
+            <button (click)="toggleBarCharts('databasesQueryLanguagesChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'databasesQueryLanguagesChart' ? 'oklch(0.65 0.2 180)' : ''">Databases
+                & Query
+                Languages</button>
+            <button (click)="toggleBarCharts('apisChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'apisChart' ? 'oklch(0.65 0.2 180)' : ''">API's</button>
+            <button (click)="toggleBarCharts('toolsVersionControlChart')" class="btn me-2 mb-2"
+                [style.background-color]="barChart === 'toolsVersionControlChart' ? 'oklch(0.65 0.2 180)' : ''">Tools &
+                Version
+                Control</button>
         </div>
 
         @switch (barChart) {
-            @case ("languagesChart") {
-                <div class="chart col-12 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-language-bar-chart></app-language-bar-chart>
-                    </div>
-                </div>
-            }
-            @case ("frameworksPlatformsChart") {
-                <div class="chart col-12 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-frameworks-platforms-bar-chart></app-frameworks-platforms-bar-chart>
-                    </div>
-                </div>
-            }
-            @case ("librariesChart") {
-                <div class="chart col-12 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-libraries-bar-chart></app-libraries-bar-chart>
-                    </div>
-                </div>
-            }
-            @case ("databasesQueryLanguagesChart") {
-                <div class="chart col-12 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-databases-query-languages-bar-chart></app-databases-query-languages-bar-chart>
-                    </div>
-                </div>
-            }
-            @case ("apisChart") {
-                <div class="chart col-11 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-apis-bar-chart></app-apis-bar-chart>
-                    </div>
-                </div>
-            }
-            @case ("toolsVersionControlChart") {
-                <div class="col-11 col-md-9 mb-4 pb-5">
-                    <div>
-                        <app-tools-versioncontrol-bar-chart></app-tools-versioncontrol-bar-chart>
-                    </div>
-                </div>
-            }
+        @case ("languagesChart") {
+        <div class="chart col-12 col-md-9 mb-4 pb-5">
+            <div>
+                <app-language-bar-chart></app-language-bar-chart>
+            </div>
+        </div>
+        }
+        @case ("frameworksPlatformsChart") {
+        <div class="chart col-12 col-md-9 mb-4 pb-5">
+            <div>
+                <app-frameworks-platforms-bar-chart></app-frameworks-platforms-bar-chart>
+            </div>
+        </div>
+        }
+        @case ("librariesChart") {
+        <div class="chart col-12 col-md-9 mb-4 pb-5">
+            <div>
+                <app-libraries-bar-chart></app-libraries-bar-chart>
+            </div>
+        </div>
+        }
+        @case ("databasesQueryLanguagesChart") {
+        <div class="chart col-12 col-md-9 mb-4 pb-5">
+            <div>
+                <app-databases-query-languages-bar-chart></app-databases-query-languages-bar-chart>
+            </div>
+        </div>
+        }
+        @case ("apisChart") {
+        <div class="chart col-11 col-md-9 mb-4 pb-5">
+            <div>
+                <app-apis-bar-chart></app-apis-bar-chart>
+            </div>
+        </div>
+        }
+        @case ("toolsVersionControlChart") {
+        <div class="col-11 col-md-9 mb-4 pb-5">
+            <div>
+                <app-tools-versioncontrol-bar-chart></app-tools-versioncontrol-bar-chart>
+            </div>
+        </div>
+        }
         }
 
         <div class="row justify-content-center pt-5 pb-5">
@@ -68,14 +80,16 @@
                 <div class="info d-flex align-items-stretch p-4 rounded">
                     <div class="col-auto position-relative pe-0">
                         <div class="vertical-line-container">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                            <div class="dot"></div>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="ps-4">
                         <h3>Education</h3>
-                        <p>Howest Bruges <br> Associate Degree in Programming 2023–2025 <br> Diploma obtained in January 2025</p>
-                        <p>Atheneum Calmeyn De Panne <br> Electronic Installation Techniques (TSO3) <br> A2 diploma obtained in June 2004</p>
+                        <p>Howest Bruges <br> Associate Degree in Programming 2023–2025 <br> Diploma obtained in January
+                            2025</p>
+                        <p>Atheneum Calmeyn De Panne <br> Electronic Installation Techniques (TSO3) <br> A2 diploma
+                            obtained in June 2004</p>
                     </div>
                 </div>
             </div>
@@ -84,8 +98,8 @@
                 <div class="info d-flex align-items-stretch p-4 rounded">
                     <div class="col-auto position-relative pe-0">
                         <div class="vertical-line-container">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                            <div class="dot"></div>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="ps-4">
@@ -95,8 +109,9 @@
                             Full-stack Software Engineer
                         </p>
                         <p>
-                            During my internship at ZF in Ypres, I independently conducted research on GraphQL APIs/queries 
-                            and successfully integrated them into an existing application. I also gained experience 
+                            During my internship at ZF in Ypres, I independently conducted research on GraphQL
+                            APIs/queries
+                            and successfully integrated them into an existing application. I also gained experience
                             with microservices in .NET Core and React.js, and worked within an Agile (Scrum) team.
                         </p>
                     </div>
@@ -107,8 +122,8 @@
                 <div class="info d-flex align-items-stretch p-4 rounded">
                     <div class="col-auto position-relative pe-0">
                         <div class="vertical-line-container">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                            <div class="dot"></div>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="ps-4">
@@ -125,8 +140,8 @@
                 <div class="info d-flex align-items-stretch p-4 rounded">
                     <div class="col-auto position-relative pe-0">
                         <div class="vertical-line-container">
-                        <div class="dot"></div>
-                        <div class="line"></div>
+                            <div class="dot"></div>
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="ps-4">
@@ -140,4 +155,3 @@
         </div>
     </div>
 </div>
-

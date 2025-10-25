@@ -1,5 +1,21 @@
-input, textarea {
+input,
+textarea {
     background-color: transparent;
-    border: 2px solid limegreen;
+    border: 2px solid oklch(0.65 0.2 180) !important;
+    color: whitesmoke;
+}
+
+.hover-primary {
+    color: whitesmoke !important;
+}
+
+.hover-primary:hover {
+    color: oklch(68.451% 0.12911 174.995 / 0.562) !important;
+    transition: color 0.3s ease;
+}
+
+button {
+    font-size: clamp(0.8rem, 2vw, 1.25rem);
+    background-color: oklch(0.65 0.2 180) !important;
     color: whitesmoke;
 }

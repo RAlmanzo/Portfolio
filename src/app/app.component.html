@@ -1,40 +1,20 @@
 <div class="body-wrapper">
   <nav>
     <button #menuButton class="btn btn-outline-primary" (click)="toggleMenu()">☰</button>
-
-    <div class="sideMenu">
-      <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-4" width="165" height="175">
-
-      <h3>Almanzo Rosseel</h3>
-
-      <div class="d-flex gap-3 mb-4">
-        <a href="https://www.linkedin.com/in/rosseel-almanzo-5241172ba/" target="_blank" rel="noopener">
-          <img src="assets/images/Linkedin.png" alt="LinkedIn" width="32" height="32">
-        </a>
-        <a href="https://github.com/RAlmanzo" target="_blank" rel="noopener">
-          <img src="assets/images/github.png" alt="GitHub" width="32" height="32">
-        </a>
-      </div>
-
-      <ul class="list-unstyled">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><a routerLink="/resume">Resume</a></li>
-        <li><a routerLink="/projects">Projects</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
-      </ul>  
-    </div>
-
-    <div class="footer-menu">
-      <img src="assets/images/MinARlogo.jpg" alt="logo made by owner Almanzo">
-      <small>&copy; All rights reserved.</small>
-    </div>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/resume">Resume</a></li>
+      <li><a routerLink="/projects">Projects</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
   </nav>
-  
-  <main [style.background-image]="'url(' + backgroundImage + ')'">
+
+  <main>
     <div #menu class="menu" [class.open]="menuOpen">
       <div class="d-flex flex-column align-items-center text-center mt-4">
-        <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-3" width="115" height="125">
+        <img src="assets/images/profile-menu.png" alt="Profielfoto" class="rounded-circle mb-3" width="115"
+          height="125">
 
         <div class="d-flex gap-3">
           <a href="https://www.linkedin.com/in/rosseel-almanzo-5241172ba/" target="_blank" rel="noopener">
@@ -49,7 +29,7 @@
       <nav>
         <a routerLink="/" (click)="toggleMenu()">Home</a>
         <a routerLink="/about" (click)="toggleMenu()">About</a>
-        <a routerLink="/resume"(click)="toggleMenu()">Resume</a>
+        <a routerLink="/resume" (click)="toggleMenu()">Resume</a>
         <a routerLink="/projects" (click)="toggleMenu()">Projects</a>
         <a routerLink="/contact" (click)="toggleMenu()">Contact</a>
       </nav>
@@ -57,7 +37,7 @@
 
     <router-outlet />
   </main>
-  
+
   <footer>
     <img src="assets/images/MinARlogo.jpg" alt="logo made by owner Almanzo">
     <small>&copy;All rights reserved.</small>

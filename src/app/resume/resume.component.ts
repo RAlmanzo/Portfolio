@@ -16,11 +16,11 @@ import { AnimatorService } from '../services/animator.service';
     ApisBarChartComponent,
     ToolsVersioncontrolBarChartComponent,
     LibrariesBarChartComponent
-],
+  ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
-export class ResumeComponent implements AfterViewInit{
+export class ResumeComponent implements AfterViewInit {
   @ViewChild('animatedText') animatedText!: ElementRef;
 
   resumeTitle = 'Resume';
@@ -29,13 +29,13 @@ export class ResumeComponent implements AfterViewInit{
   constructor(
     private renderer: Renderer2,
     private textAnimator: AnimatorService
-  ){}
+  ) { }
 
   ngAfterViewInit() {
     this.textAnimator.animateText(this.resumeTitle, this.animatedText.nativeElement, this.renderer);
   }
 
-  toggleBarCharts(value:string){
+  toggleBarCharts(value: string) {
     this.barChart = value;
   }
 

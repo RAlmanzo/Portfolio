@@ -7,12 +7,12 @@ import { ChartBarBuilderService } from '../../services/chart-builder.service';
   templateUrl: './language-bar-chart.component.html',
   styleUrl: './language-bar-chart.component.css'
 })
-export class LanguageBarChartComponent implements AfterViewInit, OnDestroy{
+export class LanguageBarChartComponent implements AfterViewInit, OnDestroy {
   @ViewChild('skillsCanvas', { static: false }) canvasRef!: ElementRef<HTMLCanvasElement>;
 
-  chart:any;
-  labels = ['C# (OOP)','JavaScript','TypeScript','HTML5','CSS'];
-  dataSetData = [90, 85, 70, 90, 85];
+  chart: any;
+  labels = ['C# (OOP)', 'Python3 Basics', 'JavaScript', 'TypeScript', 'HTML5', 'CSS'];
+  dataSetData = [90, 70, 85, 70, 90, 85];
   backgroundColor = 'rgba(255, 99, 132, 0.2)';
   borderColor = 'rgb(255, 99, 132)';
 
@@ -20,13 +20,13 @@ export class LanguageBarChartComponent implements AfterViewInit, OnDestroy{
     labels: this.labels,
     datasets: [{
       data: this.dataSetData,
-      backgroundColor:this.backgroundColor,
+      backgroundColor: this.backgroundColor,
       borderColor: this.borderColor,
       borderWidth: 1
     }]
   };
 
-  constructor(private chartBarBuilder: ChartBarBuilderService,) {}
+  constructor(private chartBarBuilder: ChartBarBuilderService,) { }
 
   ngAfterViewInit(): void {
     this.chart = this.chartBarBuilder.createBarChart(this.chartBarData, this.canvasRef.nativeElement);
