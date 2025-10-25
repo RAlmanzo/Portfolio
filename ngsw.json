@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751296277976,
+  "timestamp": 1761399431116,
   "index": "/Portfolio/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Portfolio/chunk-M34PLRME.js",
-        "/Portfolio/chunk-PDXS6TRT.js",
+        "/Portfolio/chunk-3IXXOXJG.js",
+        "/Portfolio/chunk-A2IJUWG7.js",
+        "/Portfolio/chunk-CI6Y3IYT.js",
+        "/Portfolio/chunk-HO4WI4UJ.js",
+        "/Portfolio/chunk-KGVXHUFQ.js",
+        "/Portfolio/chunk-YY6IYXQ5.js",
         "/Portfolio/favicon.ico",
         "/Portfolio/index.html",
-        "/Portfolio/main-O3FEJFQT.js",
+        "/Portfolio/main-P2CUBIZG.js",
         "/Portfolio/manifest.webmanifest",
-        "/Portfolio/polyfills-FFHMD2TL.js",
-        "/Portfolio/styles-6KLEGJCA.css"
+        "/Portfolio/polyfills-B6TNHZQ6.js",
+        "/Portfolio/styles-GJLZFVNN.css"
       ],
       "patterns": []
     },
@@ -30,15 +34,10 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Portfolio/assets/images/Linkedin.png",
         "/Portfolio/assets/images/MinARlogo.jpg",
-        "/Portfolio/assets/images/github.png",
         "/Portfolio/assets/images/hiken.jpg",
         "/Portfolio/assets/images/hiken2.jpg",
-        "/Portfolio/assets/images/home-page.png",
-        "/Portfolio/assets/images/mail.png",
         "/Portfolio/assets/images/me.jpg",
-        "/Portfolio/assets/images/phone.png",
         "/Portfolio/assets/images/portfolio1.png",
         "/Portfolio/assets/images/portfolio2.png",
         "/Portfolio/assets/images/profile-menu.png",
@@ -60,22 +59,18 @@
         "/Portfolio/icons/icon-512x512.png",
         "/Portfolio/icons/icon-72x72.png",
         "/Portfolio/icons/icon-96x96.png",
-        "/Portfolio/media/home-page-3QCGYWXN.png"
+        "/Portfolio/media/bootstrap-icons-CVBWLLHT.woff2",
+        "/Portfolio/media/bootstrap-icons-VQNJTM6Q.woff"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/Portfolio/assets/images/Linkedin.png": "c4c7321e9048be40cd149680202ef0b45a435da5",
     "/Portfolio/assets/images/MinARlogo.jpg": "134573eb4761769e7a7f9b72fc2f5186ca43c543",
-    "/Portfolio/assets/images/github.png": "cefc61758a8e88a2886313d70cbeafea55ce7481",
     "/Portfolio/assets/images/hiken.jpg": "ed90a182dae61c8d949ac7393ef89ae9c185a4ee",
     "/Portfolio/assets/images/hiken2.jpg": "6f8fa5d3862b55cf387956d17eba37824e3c0e02",
-    "/Portfolio/assets/images/home-page.png": "1a51830525aab98218e45d243665495e5b3f27ed",
-    "/Portfolio/assets/images/mail.png": "4478ca52c7ffbabfcce73eb8f0d7b51a5c0e9623",
     "/Portfolio/assets/images/me.jpg": "f203b17c50cce16e6d394a284104aa39550a7672",
-    "/Portfolio/assets/images/phone.png": "a99fc30820a735851b623a3d16ae9c7065bafcfc",
     "/Portfolio/assets/images/portfolio1.png": "9801f6b31861db6760316c1756562c0722d1bbaa",
     "/Portfolio/assets/images/portfolio2.png": "0dcd628fec980a91d207b206b904bb7d4ee9cef7",
     "/Portfolio/assets/images/profile-menu.png": "49f1d0b365ca6876e4335ece6910fd1811cdb641",
@@ -89,8 +84,12 @@
     "/Portfolio/assets/images/sniffhikesmob2.png": "3cfb20014295baa4fc1ba48470df40b730105f3a",
     "/Portfolio/assets/images/sniffhikesmob3.png": "7f56ece3536cc3d108a7b788b44ee754bddf4e9c",
     "/Portfolio/assets/images/user.png": "c3e331b345eb95dd842dead62e78c87d0b504ba1",
-    "/Portfolio/chunk-M34PLRME.js": "7e451945be29635efb0b35ad7f5ae2df9e8f6c22",
-    "/Portfolio/chunk-PDXS6TRT.js": "7b18aa49a12c2e18d5a3916b2e4a62db983fac9f",
+    "/Portfolio/chunk-3IXXOXJG.js": "e7747cbb9d675720bd4bb60744e4feb7817a0b85",
+    "/Portfolio/chunk-A2IJUWG7.js": "60ff442670f2cd1b0da34a74d1d593d81ca4335c",
+    "/Portfolio/chunk-CI6Y3IYT.js": "eeedbd603bc5b62545dbd83a388a02fb73ac38d7",
+    "/Portfolio/chunk-HO4WI4UJ.js": "16cdf71a9c4a2187830b44168c209dd64932881c",
+    "/Portfolio/chunk-KGVXHUFQ.js": "90aadfb144d07d39e5fc1db1ed6c9c74e63eb16c",
+    "/Portfolio/chunk-YY6IYXQ5.js": "fe9988492cd33a1fcb13cbdc432d73fca9fe9f8e",
     "/Portfolio/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/Portfolio/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
     "/Portfolio/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
@@ -100,12 +99,13 @@
     "/Portfolio/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/Portfolio/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/Portfolio/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/Portfolio/index.html": "f65a1eac437838feecf20670144186a027ab3a2f",
-    "/Portfolio/main-O3FEJFQT.js": "66e66f4b15b9111f874b9d3c545074d5b5ff9a8c",
+    "/Portfolio/index.html": "e2b257c1c3e5884216d16347e0617d295cbfff1b",
+    "/Portfolio/main-P2CUBIZG.js": "8958825fed8a379c65ba908b45fcc96ab90888b1",
     "/Portfolio/manifest.webmanifest": "453c9d8dd177aa1fb25a7053f4cfca6bd7be752e",
-    "/Portfolio/media/home-page-3QCGYWXN.png": "1a51830525aab98218e45d243665495e5b3f27ed",
-    "/Portfolio/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
-    "/Portfolio/styles-6KLEGJCA.css": "9902649e0c566268655a7ecb4e110763b7cdc52e"
+    "/Portfolio/media/bootstrap-icons-CVBWLLHT.woff2": "b441fcff939e24fa0906a37b7788788b9fddbb68",
+    "/Portfolio/media/bootstrap-icons-VQNJTM6Q.woff": "762010c79b4a05e1131fc8fb3b1aeff324d8033f",
+    "/Portfolio/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/Portfolio/styles-GJLZFVNN.css": "8d8520d877279f8c0f31c8d77e4a585284be2453"
   },
   "navigationUrls": [
     {
