@@ -39,6 +39,10 @@ nav {
     z-index: 1000;
 }
 
+.icon {
+    color: whitesmoke !important;
+}
+
 .links {
     display: none;
 }
