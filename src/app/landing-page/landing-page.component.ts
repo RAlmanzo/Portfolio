@@ -17,7 +17,10 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
     this.activeRoute.fragment.subscribe(fragmentId => {
       if (fragmentId) {
-        this.ScrollToFragment(fragmentId);
+        console.log("Fragment found: " + fragmentId);
+        setTimeout(() => {
+          this.ScrollToFragment(fragmentId);
+        }, 50);
       }
     });
   }
@@ -26,6 +29,7 @@ export class LandingPageComponent implements OnInit {
     const element = document.getElementById(fragment);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      console.log("Scrolled to fragment: " + fragment);
     }
   }
 }
