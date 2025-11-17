@@ -17,4 +17,11 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  ScrollToFragment(fragment: string): void {
+    const element = document.getElementById(fragment);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
