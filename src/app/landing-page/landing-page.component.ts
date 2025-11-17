@@ -15,7 +15,11 @@ export class LandingPageComponent implements OnInit {
   activeRoute: ActivatedRoute = inject(ActivatedRoute);
 
   ngOnInit(): void {
-
+    this.activeRoute.fragment.subscribe(fragmentId => {
+      if (fragmentId) {
+        this.ScrollToFragment(fragmentId);
+      }
+    });
   }
 
   ScrollToFragment(fragment: string): void {
