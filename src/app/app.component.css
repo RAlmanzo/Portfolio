@@ -36,6 +36,7 @@ nav {
     padding: 10px;
     position: sticky;
     top: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -46,6 +47,7 @@ nav {
 .menu-button {
     color: oklch(0.65 0.2 180);
     border: 2px solid oklch(0.65 0.2 180);
+    background-color: black;
 }
 
 .links {
