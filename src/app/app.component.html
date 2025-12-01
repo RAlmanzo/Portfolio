@@ -1,6 +1,6 @@
 <div class="body-wrapper">
   <nav>
-    <button #menuButton class="btn btn-outline-primary menu-button" (click)="toggleMenu()">☰</button>
+    <button #menuButton class="btn btn-outline-primary menu-button" (click)="toggleMenu()" type="button">☰</button>
     <ul>
       <li><a routerLink="/" fragment="home">Home</a></li>
       <li><a routerLink="/" fragment="about">About</a></li>
@@ -28,10 +28,10 @@
       </div>
 
       <nav>
-        <a routerLink="/" (click)="toggleMenu()">Home</a>
-        <a routerLink="/about" (click)="toggleMenu()">About</a>
-        <a routerLink="/resume" (click)="toggleMenu()">Resume</a>
-        <a routerLink="/projects" (click)="toggleMenu()">Projects</a>
+        <a routerLink="/" (click)="toggleMenu()" fragment="home">Home</a>
+        <a routerLink="/" (click)="toggleMenu()" fragment="about">About</a>
+        <a routerLink="/" (click)="toggleMenu()" fragment="resume">Resume</a>
+        <a routerLink="/" (click)="toggleMenu()" fragment="projects">Projects</a>
         <a routerLink="/contact" (click)="toggleMenu()">Contact</a>
       </nav>
     </div>
