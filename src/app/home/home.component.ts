@@ -1,10 +1,9 @@
-import { AfterViewInit, Component, ElementRef, Renderer2, viewChild, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { AnimatorService } from '../services/animator.service';
-import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
